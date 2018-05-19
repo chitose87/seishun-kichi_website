@@ -1,0 +1,31 @@
+{
+  "name": "seishun-kichi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitose87/seishun-kichi_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chitose87/seishun-kichi_website/issues"
+  },
+  "homepage": "https://github.com/chitose87/seishun-kichi_website#readme",
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}

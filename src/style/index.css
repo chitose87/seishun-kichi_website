@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/**
+size
+ */
+/**
+color
+ */
+/**
+z-index
+ */
+/**
+
+ */
+html, :root {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #000;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans", sans-serif; }
+  @media screen and (min-width: 751px) {
+    html, :root {
+      font-size: 30px; } }
+  @media screen and (max-width: 750px) {
+    html, :root {
+      font-size: 20px; } }
+
+@media screen and (min-width: 751px) {
+  body {
+    font-size: 18px;
+    line-height: 1.4; } }
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+::before,
+::after {
+  box-sizing: inherit; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  outline: 0; }
+  button:focus {
+    outline: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  word-wrap: break-word; }
+
+h3 {
+  font-weight: bolder; }
+
+h4 {
+  font-weight: bolder; }
+
+a {
+  font-weight: bolder; }
+
+em {
+  font-weight: bolder; }
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  height: 100vh;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+
+/*# sourceMappingURL=index.css.map */

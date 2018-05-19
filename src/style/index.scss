@@ -1,0 +1,41 @@
+@import "util";
+@import "init";
+
+body {
+	//&:before {
+	//	position: absolute;
+	//	display: inline-block;
+	//	z-index: 1000;
+	//	font-size: large;
+	//}
+	//@include mq-xl {
+	//	&:before {
+	//		content: "mq-xl";
+	//	}
+	//}
+	//@include mq-md {
+	//	&:before {
+	//		content: "mq-md";
+	//	}
+	//}
+	//@include mq-tb {
+	//	&:before {
+	//		content: "mq-tb";
+	//	}
+	//}
+	//@include mq-pc {
+	//	&:before {
+	//		background-color: red;
+	//	}
+	//}
+	//@include mq-sp {
+	//	&:before {
+	//		content: "mq-sp";
+	//		background-color: blue;
+	//	}
+	//}
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	height: 100vh;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
