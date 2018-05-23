@@ -1,0 +1,23 @@
+.pick-up-news {
+	ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		li {
+			@include mq-pc {
+				width: calc(100% / 4 - 0.5rem);
+			}
+			@include mq-sp {
+				width: calc(100% / 2 - 0.5rem);
+			}
+			.thumb {
+				img {
+
+				}
+			}
+			.lead {
+
+			}
+		}
+	}
+}

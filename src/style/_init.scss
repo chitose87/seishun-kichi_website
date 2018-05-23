@@ -1,26 +1,26 @@
 html, :root {
-	color: $color_white;
-	background-color: $color_black;
+	color: $color_black;
+	background-color: $color_white;
 	box-sizing: border-box;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	font-family: "Noto Sans", sans-serif;
 
 	@include mq-pc {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	@include mq-sp {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 
 body {
 	@include mq-pc {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.4;
 	}
 	@include mq-sp {
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 1.4;
 	}
 }
@@ -56,6 +56,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 	word-wrap: break-word;
+}
+
+ul,ol{
+	list-style: none;
 }
 
 // ----- ----- ----- ----- font style

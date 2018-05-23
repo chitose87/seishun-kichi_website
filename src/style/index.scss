@@ -2,40 +2,73 @@
 @import "init";
 
 body {
-	//&:before {
-	//	position: absolute;
-	//	display: inline-block;
-	//	z-index: 1000;
-	//	font-size: large;
-	//}
-	//@include mq-xl {
-	//	&:before {
-	//		content: "mq-xl";
-	//	}
-	//}
-	//@include mq-md {
-	//	&:before {
-	//		content: "mq-md";
-	//	}
-	//}
-	//@include mq-tb {
-	//	&:before {
-	//		content: "mq-tb";
-	//	}
-	//}
-	//@include mq-pc {
-	//	&:before {
-	//		background-color: red;
-	//	}
-	//}
-	//@include mq-sp {
-	//	&:before {
-	//		content: "mq-sp";
-	//		background-color: blue;
-	//	}
-	//}
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	height: 100vh;
+	&:before {
+		position: absolute;
+		display: inline-block;
+		z-index: 1000;
+		font-size: large;
+	}
+	@include mq-xl {
+		&:before {
+			content: "mq-xl";
+		}
+	}
+	@include mq-md {
+		&:before {
+			content: "mq-md";
+		}
+	}
+	@include mq-tb {
+		&:before {
+			content: "mq-tb";
+		}
+	}
+	@include mq-pc {
+		&:before {
+			background-color: red;
+		}
+	}
+	@include mq-sp {
+		&:before {
+			content: "mq-sp";
+			background-color: blue;
+		}
+	}
 	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
+
+header {
+	background-color: $color_white;
+	padding: 0 1rem;
+	.inner {
+		@include mq-pc {
+			height: 5rem;
+		}
+		@include mq-sp {
+			height: 2.5rem;
+		}
+	}
+}
+
+footer {
+	background-color: $color_blue;
+	padding: 0 1rem;
+	.inner {
+		padding: 1rem 0;
+	}
+}
+
+main {
+}
+
+section {
+	padding: 1rem 1rem;
+}
+
+.inner {
+	border: 1px solid rgba($color_red, 0.8);
+	max-width: 1160px;
+	margin: auto;
+}
+
+@import "pick-up-news";
