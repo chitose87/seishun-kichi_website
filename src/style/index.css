@@ -112,7 +112,7 @@ header {
       height: 2.5rem; } }
 
 footer {
-  background-color: #6ebbd4;
+  background-color: red;
   padding: 0 1rem; }
   footer .inner {
     padding: 1rem 0; }
