@@ -125,6 +125,9 @@ section {
   max-width: 1160px;
   margin: auto; }
 
+.main-visual h2 {
+  color: red; }
+
 .pick-up-news {
   background: blue;
   margin-top: 0px; }
