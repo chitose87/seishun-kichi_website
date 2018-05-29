@@ -1,8 +1,11 @@
 .pick-up-news {
+	background: blue;
+	margin-top: 0px;
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: wrap;
+		background: royalblue;
 		li {
 			@include mq-pc {
 				width: calc(100% / 4 - 0.5rem);
@@ -12,7 +15,10 @@
 			}
 			.thumb {
 				img {
-
+					border: 2px solid blue;
+					box-shadow: 0 0 5px gray ;
+					border-radius: 50%;
+					cursor: pointer;
 				}
 			}
 			.lead {
