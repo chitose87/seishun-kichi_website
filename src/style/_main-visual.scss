@@ -1,5 +1,14 @@
 .main-visual {
-	h2{
-		color: red;
+	padding: 0;
+
+	.body{
+		width: 100%;
+		height: 400px;
+		background: url("https://placehold.jp/150x150.png")
+		center center / cover no-repeat;
+
+		h2{
+			display: none;
+		}
 	}
 }
