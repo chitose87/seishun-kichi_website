@@ -111,11 +111,25 @@ header {
     header .inner {
       height: 2.5rem; } }
 
-footer {
-  background-color: red;
-  padding: 0 1rem; }
-  footer .inner {
-    padding: 1rem 0; }
+footer .footer {
+  background-color: #6ebbd4;
+  padding-bottom: 0; }
+  footer .footer .inner {
+    border: 0; }
+    footer .footer .inner .body {
+      padding: 0 2rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      color: white;
+      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+      footer .footer .inner .body img[src="https://placehold.jp/150x150.png"] {
+        width: 30%;
+        height: 2rem;
+        margin-bottom: 0.5rem; }
+      footer .footer .inner .body p:last-child {
+        display: flex;
+        justify-content: center;
+        vertical-align: bottom; }
 
 section {
   padding: 1rem 1rem; }
@@ -129,7 +143,7 @@ section {
   padding: 0; }
   .main-visual .body {
     width: 100%;
-    height: 400px;
+    height: 20rem;
     background: url("https://placehold.jp/150x150.png") center center/cover no-repeat; }
     .main-visual .body h2 {
       display: none; }
@@ -160,10 +174,10 @@ section {
 .main-contents .inner {
   border: 0; }
   .main-contents .inner .vision {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
-    height: 300px;
+    height: 12rem;
     background-image: url("https://placehold.jp/150x150.png");
     background-position-x: center;
     background-position-y: center;
@@ -177,17 +191,17 @@ section {
       display: none; }
     .main-contents .inner .vision .body img[src="https://placehold.jp/150x150.png"] {
       width: 100%;
-      height: 80px;
-      margin-bottom: 10px; }
+      height: 4rem;
+      margin-bottom: 0.5rem; }
     .main-contents .inner .vision .body .lead {
       color: white;
       font-size: 0.5rem;
       font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
   .main-contents .inner .activity {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
-    height: 300px;
+    height: 12rem;
     background-image: url("https://placehold.jp/150x150.png");
     background-position-x: center;
     background-position-y: center;
@@ -207,16 +221,16 @@ section {
       color: white;
       font-size: 0.5rem;
       font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-      margin-bottom: 20px; }
+      margin-bottom: 0.5rem; }
     .main-contents .inner .activity .body .lead {
       color: white;
       font-size: 0.5rem;
       font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
   .main-contents .inner .suport {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
-    height: 300px;
+    height: 12rem;
     background-image: url("https://placehold.jp/150x150.png");
     background-position-x: center;
     background-position-y: center;
@@ -236,7 +250,7 @@ section {
       color: white;
       font-size: 0.5rem;
       font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-      margin-bottom: 20px; }
+      margin-bottom: 0.5rem; }
     .main-contents .inner .suport .body .lead {
       color: white;
       font-size: 0.5rem;
