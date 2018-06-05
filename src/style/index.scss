@@ -63,6 +63,9 @@ footer {
 
 		.body{
 			display: flex;
+			justify-content: space-between;
+			vertical-align: middle;
+			align-items: center;
 			.left{
 				img[src="https://placehold.jp/150x150.png"]{
 					width: 30%;
@@ -70,23 +73,15 @@ footer {
 					margin-bottom: 0.5rem;
 				text-align: left;
 				}
-
 			}
 			.right{
 				text-align: right;
-				vertical-align: middle;
-				//justify-content: center;
-				//align-items: center;
 			}
-
 		}
 
 		.copy{
 			text-align: center;
-			//display: flex;
-			//justify-content: center;
-			////align-items: flex-end;
-			//vertical-align: bottom;
+			margin-top: 1rem;
 		}
 	}
 }

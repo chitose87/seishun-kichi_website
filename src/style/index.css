@@ -121,17 +121,20 @@ footer {
     color: white;
     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
     footer .inner .body {
-      display: flex; }
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+      align-items: center; }
       footer .inner .body .left img[src="https://placehold.jp/150x150.png"] {
         width: 30%;
         height: 2rem;
         margin-bottom: 0.5rem;
         text-align: left; }
       footer .inner .body .right {
-        text-align: right;
-        vertical-align: middle; }
+        text-align: right; }
     footer .inner .copy {
-      text-align: center; }
+      text-align: center;
+      margin-top: 1rem; }
 
 section {
   padding: 1rem 1rem; }
