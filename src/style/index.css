@@ -111,25 +111,27 @@ header {
     header .inner {
       height: 2.5rem; } }
 
-footer .inner {
-  background-color: #6ebbd4;
-  padding-bottom: 0;
-  border: 0; }
-  footer .inner .body {
-    height: 10rem;
+footer {
+  background-color: #6ebbd4; }
+  footer .inner {
+    border: 0;
     padding: 0 2rem;
     padding-top: 1rem;
     margin-top: 0.2rem;
     color: white;
     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-    footer .inner .body img[src="https://placehold.jp/150x150.png"] {
-      width: 30%;
-      height: 2rem;
-      margin-bottom: 0.5rem; }
-    footer .inner .body p:last-child {
-      display: flex;
-      justify-content: center;
-      vertical-align: bottom; }
+    footer .inner .body {
+      display: flex; }
+      footer .inner .body .left img[src="https://placehold.jp/150x150.png"] {
+        width: 30%;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: left; }
+      footer .inner .body .right {
+        text-align: right;
+        vertical-align: middle; }
+    footer .inner .copy {
+      text-align: center; }
 
 section {
   padding: 1rem 1rem; }
