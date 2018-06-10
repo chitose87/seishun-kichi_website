@@ -16,7 +16,7 @@ function change() {
     if(i>=img.length){
        i=0;
     }
-    mv.style.backgroundImage = 'url(' + img[i] + ')';;
+    mv.style.backgroundImage = 'url(' + img[i] + ')';
 }
 
 timer1 = setInterval(change, 3000);
