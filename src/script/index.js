@@ -1,33 +1,13 @@
 var mv = document.getElementById("mv-body");
 
-// (function () {
-//     // console.log("aaaa");
-//     // var mv = document.getElementsByClassName("main-visual");
-//     // console.log(document.getElementById("main-visual").style);
-//     // var mv = document.getElementById("main-visual");
-//     console.log(mv);
-// })();
+(function () {
+    console.log(mv);
+})();
 
 
 i= -1;
-// url = "../img/";
 
 img = new Array('../img/main1.jpg','../img/main2.jpg','../img/main3.jpg');
-
-// mv.style.backgroundImage = 'url(' + img[i] + ')';
-
-// (function change() {
-//     i++;
-//     if(i>=img.length){
-//        i=0;
-//     }
-//     mv.style.backgroundImage = 'url(' + img[i] + ')';
-// }();
-//
-// function tm(){
-//     mv.style.backgroundImage = 'url(' + img[i] + ')';
-//     tm = setInterval("change",3000);
-// })
 
 var timer1;
 
@@ -36,11 +16,9 @@ function change() {
     if(i>=img.length){
        i=0;
     }
-    // document.body.background = url + img[i];
     mv.style.backgroundImage = 'url(' + img[i] + ')';;
 }
 
-// タイマー開始
 timer1 = setInterval(change, 3000);
 
 
