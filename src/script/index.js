@@ -4,22 +4,22 @@ var mv = document.getElementById("mv-body");
     console.log(mv);
 })();
 
-//
-// i= -1;
-//
-// img = new Array('../img/main1.jpg','../img/main2.jpg','../img/main3.jpg');
-//
-// var timer1;
-//
-// function change() {
-//     i++;
-//     if(i>=img.length){
-//        i=0;
-//     }
-//     mv.style.backgroundImage = 'url(' + img[i] + ')';
-// }
-//
-// timer1 = setInterval(change, 3000);
+
+i= -1;
+
+img = new Array('../img/main1.jpg','../img/main2.jpg','../img/main3.jpg');
+
+var timer1;
+
+function change() {
+    i++;
+    if(i>=img.length){
+       i=0;
+    }
+    mv.style.backgroundImage = 'url(' + img[i] + ')';
+}
+
+timer1 = setInterval(change, 3000);
 
 
 
