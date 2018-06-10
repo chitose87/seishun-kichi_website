@@ -1,30 +1,94 @@
-var mv = document.getElementById("main-visual");
+var mv = document.getElementById("mv-body");
 
-(function () {
-    // console.log("aaaa");
-    // var mv = document.getElementsByClassName("main-visual");
-    // console.log(document.getElementById("main-visual").style);
-    // var mv = document.getElementById("main-visual");
-    console.log(mv);
-})();
+// (function () {
+//     // console.log("aaaa");
+//     // var mv = document.getElementsByClassName("main-visual");
+//     // console.log(document.getElementById("main-visual").style);
+//     // var mv = document.getElementById("main-visual");
+//     console.log(mv);
+// })();
 
 
+i= -1;
+// url = "../img/";
 
-// img = Array();
-// image[0] = new Image();
-// image[0].src= url("../img/main1.jpg");
-// image[1] = new Image();
-// image[1].src= url("../img/main2.jpg");
-// image[2] = new Image();
-// image[2].src= url("../img/main3.jpg");
+img = new Array('../img/main1.jpg','../img/main2.jpg','../img/main3.jpg');
 
-// var img = "url('../img/test1.jpg')";
-// var img = "url("../img/main1.jpg")";
+// mv.style.backgroundImage = 'url(' + img[i] + ')';
 
-img.onload = function(){
-    // mv.style.backgroundImage = "url('../img/main1.jpg')";
-    mv.style.background-image: url("../img/main1.jpg")
+// (function change() {
+//     i++;
+//     if(i>=img.length){
+//        i=0;
+//     }
+//     mv.style.backgroundImage = 'url(' + img[i] + ')';
+// }();
+//
+// function tm(){
+//     mv.style.backgroundImage = 'url(' + img[i] + ')';
+//     tm = setInterval("change",3000);
+// })
+
+var timer1;
+
+function change() {
+    i++;
+    if(i>=img.length){
+       i=0;
+    }
+    // document.body.background = url + img[i];
+    mv.style.backgroundImage = 'url(' + img[i] + ')';;
 }
+
+// タイマー開始
+timer1 = setInterval(change, 3000);
+
+
+//
+// var img = new Array("../img/main1.jpg","../img/main2.jpg","../img/main3.jpg");
+//
+// i=0;
+//
+// mv.style.backgroundImage = "img[1]";
+// // mv.style.backgroundImage = "url('../img/main1.jpg')";
+//
+//
+// function change(){
+//     i++;
+//     if (i > img.length) {
+//         i = 0;
+//     }
+//     document.getElementById("mv-body")[i].style.backgroundImage = img[i];
+// }
+//
+// function tm(){
+//     // document.getElementById("mv-body")[i].style.backgroundImage = img[i];
+//     tm = setInterval("change()",3000);
+//
+// }
+//
+// (function () {
+//     // console.log("aaaa");
+//     // var mv = document.getElementsByClassName("main-visual");
+//     // console.log(document.getElementById("main-visual").style);
+//     // var mv = document.getElementById("main-visual");
+//     console.log(mv);
+// })();
+//
+
+
+
+
+
+
+
+
+
+
+// onload = function(){
+//     mv.style.backgroundImage = "url('../img/main1.jpg')";
+//     // mv.style.background-image: url("../img/main1.jpg");
+// }
 
 
 // document.body.background = "../img/test1.jpg";
@@ -155,6 +219,19 @@ img.onload = function(){
 // )
 
 
+
+// img = Array();
+// image[0] = new Image();
+// image[0].src= url("../img/main1.jpg");
+// image[1] = new Image();
+// image[1].src= url("../img/main2.jpg");
+// image[2] = new Image();
+// image[2].src= url("../img/main3.jpg");
+
+// var img = "url('../img/test1.jpg')";
+// var img = "url("../img/main1.jpg")";
+
+// var url = "../img/";
 
 
 

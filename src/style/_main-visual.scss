@@ -1,11 +1,11 @@
-#main-visual {
+.main-visual {
 	padding: 0;
 
-	.body{
+	#mv-body{
 		width: 100%;
 		height: 20rem;
-		background: url("https://placehold.jp/150x150.png");
-		//background-image: url("../img/main1.jpg");
+		//background: url("https://placehold.jp/150x150.png");
+		background-image: url("../img/seishun1.jpg");
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
