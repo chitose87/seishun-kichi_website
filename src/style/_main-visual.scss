@@ -1,7 +1,7 @@
 .main-visual {
 	padding: 0;
 
-	#mv-body{
+	.mv-body{
 		width: 100%;
 		height: 20rem;
 		//background-image: url("../img/seishun1.jpg");
@@ -11,29 +11,31 @@
 
 		//テスト（フェードインとフェードアウトで画像切り替え）
 		.bgImg {
-			position   : absolute;
-			top        : 0;
-			left       : 0;
-			bottom     : 0;
-			right      : 0;
+			width: 100%;
+			height: 20rem;
+			position: absolute;
+			//top        : 0;
+			//left       : 0;
+			//bottom     : 0;
+			//right      : 0;
 			opacity    : 0;
 			animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
 		}
 		.src1 {
-			background-image : url(../img/seishun1.jpg);   /* 背景の画像を指定 */
+			background-image : url(../img/main4.jpg);   /* 背景の画像を指定 */
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 		.src2 {
-			background-image : url(../img/main1.jpg);   /* 背景の画像を指定 */
+			background-image : url(../img/main5.jpg);   /* 背景の画像を指定 */
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			animation-delay  : 5s;
 		}
 		.src3 {
-			background-image : url(../img/main2.jpg);   /* 背景の画像を指定 */
+			background-image : url(../img/main6.jpg);   /* 背景の画像を指定 */
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
