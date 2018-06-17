@@ -167,9 +167,11 @@ section {
 
 @keyframes mvAnime1 {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.8); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: scale(1); } }
     .main-visual .body[data-index="1"] .under {
       background-image: url("../img/main6.jpg"); }
     .main-visual .body[data-index="2"] .upper {
@@ -178,9 +180,11 @@ section {
 
 @keyframes mvAnime2 {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.8); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: scale(1); } }
     .main-visual .body[data-index="2"] .under {
       background-image: url("../img/seishun1.jpg"); }
     .main-visual .body[data-index="3"] .upper {
@@ -189,9 +193,11 @@ section {
 
 @keyframes mvAnime3 {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.8); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: scale(1); } }
     .main-visual .body[data-index="3"] .under {
       background-image: url("../img/main4.jpg"); }
     .main-visual .body[data-index="4"] .upper {
@@ -200,9 +206,11 @@ section {
 
 @keyframes mvAnime4 {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0.8); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: scale(1); } }
     .main-visual .body[data-index="4"] .under {
       background-image: url("../img/main5.jpg"); }
     .main-visual .body .bgImg {

@@ -21,8 +21,8 @@
 			.upper{
 				animation: mvAnime1 1s forwards;
 				@keyframes mvAnime1 {
-					0% { opacity: 0; }
-					100% { opacity: 1; }
+					0% { opacity: 0; transform: scale(0.8);}
+					100% { opacity: 1;  transform: scale(1);}
 				}
 				background-image: url("../img/seishun1.jpg");
 			}
@@ -34,8 +34,8 @@
 			.upper {
 				animation: mvAnime2 1s forwards;
 				@keyframes mvAnime2 {
-					0% { opacity: 0; }
-					100% { opacity: 1; }
+					0% { opacity: 0; transform: scale(0.8);}
+					100% { opacity: 1;  transform: scale(1);}
 				}
 				background-image: url("../img/main4.jpg");
 			}
@@ -47,8 +47,8 @@
 			.upper {
 				animation: mvAnime3 1s forwards;
 				@keyframes mvAnime3 {
-					0% { opacity: 0; }
-					100% { opacity: 1; }
+					0% { opacity: 0; transform: scale(0.8);}
+					100% { opacity: 1;  transform: scale(1);}
 				}
 				background-image: url("../img/main5.jpg");
 			}
@@ -60,8 +60,8 @@
 			.upper {
 				animation: mvAnime4 1s forwards;
 				@keyframes mvAnime4 {
-					0% { opacity: 0; }
-					100% { opacity: 1; }
+					0% { opacity: 0; transform: scale(0.8);}
+					100% { opacity: 1;  transform: scale(1);}
 				}
 				background-image: url("../img/main6.jpg");
 			}
