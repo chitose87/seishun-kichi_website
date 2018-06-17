@@ -1,15 +1,77 @@
 .main-visual {
 	padding: 0;
-
-	.mv-body{
+	.body{
 		width: 100%;
 		height: 20rem;
-		//background-image: url("../img/seishun1.jpg");
-		//background-position: center center;
-		//background-size: cover;
-		//background-repeat: no-repeat;
+		position: relative;
+		.upper,.under{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		&[data-index="0"]{
+			.upper{
+				background-image: url("../img/main6.jpg");
+			}
+		}
+		&[data-index="1"]{
+			.upper{
+				animation: mvAnime1 1s forwards;
+				@keyframes mvAnime1 {
+					0% { opacity: 0; }
+					100% { opacity: 1; }
+				}
+				background-image: url("../img/seishun1.jpg");
+			}
+			.under{
+				background-image: url("../img/main6.jpg");
+			}
+		}
+		&[data-index="2"] {
+			.upper {
+				animation: mvAnime2 1s forwards;
+				@keyframes mvAnime2 {
+					0% { opacity: 0; }
+					100% { opacity: 1; }
+				}
+				background-image: url("../img/main4.jpg");
+			}
+			.under {
+				background-image: url("../img/seishun1.jpg");
+			}
+		}
+		&[data-index="3"] {
+			.upper {
+				animation: mvAnime3 1s forwards;
+				@keyframes mvAnime3 {
+					0% { opacity: 0; }
+					100% { opacity: 1; }
+				}
+				background-image: url("../img/main5.jpg");
+			}
+			.under {
+				background-image: url("../img/main4.jpg");
+			}
+		}
+		&[data-index="4"] {
+			.upper {
+				animation: mvAnime4 1s forwards;
+				@keyframes mvAnime4 {
+					0% { opacity: 0; }
+					100% { opacity: 1; }
+				}
+				background-image: url("../img/main6.jpg");
+			}
+			.under {
+				background-image: url("../img/main5.jpg");
+			}
+		}
 
-		//テスト（フェードインとフェードアウトで画像切り替え）
+
+		//テスト（アニメーション　フェードインとフェードアウトで画像切り替え）
 		.bgImg {
 			width: 100%;
 			height: 20rem;
@@ -56,7 +118,7 @@
 			100% { opacity: 0; }
 		}
 
-		//テスト
+		//テスト（アニメーション）
 
 		h2{
 			display: none;

@@ -1,9 +1,24 @@
 // var mv = document.getElementById("mv-body");
-var mv = document.getElementsByClassName("mv-body");
+var mv = document.getElementsByClassName("main-visual")[0];
+var mvBody = mv.getElementsByClassName("body")[0];
 
-(function () {
-    console.log(mv);
-})();
+console.log(mv,mvBody);
+
+var index=0;
+var timer1;
+function change() {
+    index++;
+    if(index>4){
+       index=1;
+    }
+    mvBody.setAttribute("data-index",index);
+}
+
+timer1 = setInterval(change, 5000);
+
+
+
+
 
 // テストの為、コメント化　↓
 

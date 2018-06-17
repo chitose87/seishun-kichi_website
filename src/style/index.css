@@ -112,19 +112,22 @@ header {
       height: 2.5rem; } }
 
 footer {
-  background-color: #6ebbd4; }
+  background-color: #6ebbd4;
+  padding: 1rem 1rem; }
   footer .inner {
-    border: 0;
-    padding: 0 2rem;
-    padding-top: 1rem;
-    margin-top: 0.2rem;
-    color: white;
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+    color: white; }
     footer .inner .body {
-      display: flex;
-      justify-content: space-between;
-      vertical-align: middle;
-      align-items: center; }
+      display: flex; }
+      @media screen and (min-width: 751px) {
+        footer .inner .body {
+          justify-content: space-between;
+          vertical-align: middle;
+          align-items: center; } }
+      @media screen and (max-width: 750px) {
+        footer .inner .body {
+          justify-content: space-around;
+          vertical-align: middle;
+          align-items: center; } }
       footer .inner .body .left img[src="https://placehold.jp/150x150.png"] {
         width: 30%;
         height: 2rem;
@@ -140,43 +143,96 @@ section {
   padding: 1rem 1rem; }
 
 .inner {
-  border: 1px solid rgba(206, 18, 6, 0.8);
   max-width: 1160px;
   margin: auto; }
 
 .main-visual {
   padding: 0; }
-  .main-visual .mv-body {
+  .main-visual .body {
     width: 100%;
-    height: 20rem; }
-    .main-visual .mv-body .bgImg {
+    height: 20rem;
+    position: relative; }
+    .main-visual .body .upper, .main-visual .body .under {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute; }
+    .main-visual .body[data-index="0"] .upper {
+      background-image: url("../img/main6.jpg"); }
+    .main-visual .body[data-index="1"] .upper {
+      animation: mvAnime1 1s forwards;
+      background-image: url("../img/seishun1.jpg"); }
+
+@keyframes mvAnime1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .main-visual .body[data-index="1"] .under {
+      background-image: url("../img/main6.jpg"); }
+    .main-visual .body[data-index="2"] .upper {
+      animation: mvAnime2 1s forwards;
+      background-image: url("../img/main4.jpg"); }
+
+@keyframes mvAnime2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .main-visual .body[data-index="2"] .under {
+      background-image: url("../img/seishun1.jpg"); }
+    .main-visual .body[data-index="3"] .upper {
+      animation: mvAnime3 1s forwards;
+      background-image: url("../img/main5.jpg"); }
+
+@keyframes mvAnime3 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .main-visual .body[data-index="3"] .under {
+      background-image: url("../img/main4.jpg"); }
+    .main-visual .body[data-index="4"] .upper {
+      animation: mvAnime4 1s forwards;
+      background-image: url("../img/main6.jpg"); }
+
+@keyframes mvAnime4 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .main-visual .body[data-index="4"] .under {
+      background-image: url("../img/main5.jpg"); }
+    .main-visual .body .bgImg {
       width: 100%;
       height: 20rem;
       position: absolute;
       opacity: 0;
       animation: bgAnime 20s infinite;
       /* 4画像 × 各5s = 20s */ }
-    .main-visual .mv-body .src1 {
+    .main-visual .body .src1 {
       background-image: url(../img/main4.jpg);
       /* 背景の画像を指定 */
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat; }
-    .main-visual .mv-body .src2 {
+    .main-visual .body .src2 {
       background-image: url(../img/main5.jpg);
       /* 背景の画像を指定 */
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
       animation-delay: 5s; }
-    .main-visual .mv-body .src3 {
+    .main-visual .body .src3 {
       background-image: url(../img/main6.jpg);
       /* 背景の画像を指定 */
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
       animation-delay: 10s; }
-    .main-visual .mv-body .src4 {
+    .main-visual .body .src4 {
       background-image: url(../img/main3.jpg);
       /* 背景の画像を指定 */
       background-position: center center;
@@ -195,7 +251,7 @@ section {
     opacity: 0; }
   100% {
     opacity: 0; } }
-    .main-visual .mv-body h2 {
+    .main-visual .body h2 {
       display: none; }
 
 .pick-up-news {
