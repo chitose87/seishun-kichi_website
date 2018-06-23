@@ -1,14 +1,16 @@
 .about-sp {
 	.inner {
-		h2 {
-			text-align: center;
-		}
-		p {
-			font-size: 20px;
-			color: $color_black;
-			& + p {
-				margin-top: 1rem;
-			}
+		min-height: 80vh;
+		background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+		background-size: cover;
+		background-position: center center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		text-align: center;
+		.body {
+
 		}
 	}
 }

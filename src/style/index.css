@@ -84,8 +84,12 @@ section {
   padding: 1rem 1rem; }
 
 .inner {
+  width: 100%;
   max-width: 1160px;
   margin: auto; }
+
+p + p {
+  margin-top: 1rem; }
 
 header {
   background-color: #fff;
@@ -106,21 +110,10 @@ footer {
     color: white; }
     footer .inner .body {
       display: flex; }
-      @media screen and (min-width: 751px) {
-        footer .inner .body {
-          justify-content: space-between;
-          vertical-align: middle;
-          align-items: center; } }
-      @media screen and (max-width: 750px) {
-        footer .inner .body {
-          justify-content: space-around;
-          vertical-align: middle;
-          align-items: center; } }
       footer .inner .body .left img {
         width: auto;
-        height: 2rem; }
-      footer .inner .body .right {
-        text-align: right; }
+        height: 2rem;
+        margin-bottom: 1rem; }
     footer .inner .copy {
       text-align: center;
       margin-top: 1rem; }
@@ -208,33 +201,44 @@ footer {
   .main-visual .body h2 {
     display: none; }
 
-.vision {
-  background-color: #6ebbd4;
-  color: #fff; }
-  .vision .inner p {
-    font-size: 20px; }
-    .vision .inner p + p {
-      margin-top: 1rem; }
-
-.about-sp .inner h2 {
+.vision .inner {
+  min-height: 80vh;
+  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   text-align: center; }
 
-.about-sp .inner p {
-  font-size: 20px;
-  color: #000; }
-  .about-sp .inner p + p {
-    margin-top: 1rem; }
+.about-sp .inner {
+  min-height: 80vh;
+  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; }
 
-.concept {
-  background-color: #6ebbd4;
-  color: #fff; }
-  .concept .inner h2 {
-    text-align: center; }
-  .concept .inner p {
-    font-size: 20px;
-    color: #000; }
-    .concept .inner p + p {
-      margin-top: 1rem; }
+.fb-area .inner .fb-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.concept .inner {
+  min-height: 80vh;
+  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; }
 
 .info .inner {
   display: flex;

@@ -46,8 +46,13 @@ section {
 
 .inner {
 	//border: 1px solid rgba($color_red, 0.8);
+	width: 100%;
 	max-width: 1160px;
 	margin: auto;
+}
+
+p + p {
+	margin-top: 1rem;
 }
 
 @import "header";
@@ -55,6 +60,7 @@ section {
 @import "main-visual";
 @import "vision";
 @import "about-sp";
+@import "fb-area";
 @import "concept";
 @import "info";
 //@import "pick-up-news";
