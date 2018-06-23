@@ -1,0 +1,38 @@
+footer {
+	background-color: $color_blue;
+	padding: 1rem 1rem;
+
+	.inner {
+		color: white;
+
+		.body {
+			display: flex;
+
+			@include mq-pc {
+				justify-content: space-between;
+				vertical-align: middle;
+				align-items: center;
+
+			}
+			@include mq-sp {
+				justify-content: space-around;
+				vertical-align: middle;
+				align-items: center;
+			}
+			.left {
+				img {
+					width: auto;
+					height: 2rem;
+				}
+			}
+			.right {
+				text-align: right;
+			}
+		}
+
+		.copy {
+			text-align: center;
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.info {
+	.inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			text-align: center;
+		}
+		table {
+			tr {
+
+			}
+			th {
+				text-align: left;
+				font-weight: normal;
+			}
+			td {
+
+			}
+		}
+
+		.document {
+			h3 {
+			}
+			dl {
+				dt {
+
+				}
+				dd {
+					display: block;
+					a {
+
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+header {
+	background-color: $color_white;
+	padding: 1rem 0;
+	.inner {
+		.logo {
+			img {
+				width: auto;
+				@include mq-pc {
+					height: 3rem;
+				}
+				@include mq-sp {
+					height: 2rem;
+				}
+			}
+		}
+	}
+}

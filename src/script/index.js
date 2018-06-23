@@ -1,8 +1,8 @@
 // var mv = document.getElementById("mv-body");
 var mv = document.getElementsByClassName("main-visual")[0];
-var mvBody = mv.getElementsByClassName("body")[0];
+// var mvBody = mv.getElementsByClassName("body")[0];
 
-console.log(mv,mvBody);
+// console.log(mv,mvBody);
 
 var index=0;
 var timer1;
@@ -11,7 +11,7 @@ function change() {
     if(index>4){
        index=1;
     }
-    mvBody.setAttribute("data-index",index);
+    mv.setAttribute("data-index",index);
 }
 
 timer1 = setInterval(change, 5000);

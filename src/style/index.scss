@@ -2,98 +2,39 @@
 @import 'init';
 
 body {
-	&:before {
-		position: absolute;
-		display: inline-block;
-		z-index: 1000;
-		font-size: large;
-	}
-	@include mq-xl {
-		&:before {
-			content: "mq-xl";
-		}
-	}
-	@include mq-md {
-		&:before {
-			content: "mq-md";
-		}
-	}
-	@include mq-tb {
-		&:before {
-			content: "mq-tb";
-		}
-	}
-	@include mq-pc {
-		&:before {
-			background-color: red;
-		}
-	}
-	@include mq-sp {
-		&:before {
-			content: "mq-sp";
-			background-color: blue;
-		}
-	}
+	//&:before {
+	//	position: absolute;
+	//	display: inline-block;
+	//	z-index: 1000;
+	//	font-size: large;
+	//}
+	//@include mq-xl {
+	//	&:before {
+	//		content: "mq-xl";
+	//	}
+	//}
+	//@include mq-md {
+	//	&:before {
+	//		content: "mq-md";
+	//	}
+	//}
+	//@include mq-tb {
+	//	&:before {
+	//		content: "mq-tb";
+	//	}
+	//}
+	//@include mq-pc {
+	//	&:before {
+	//		background-color: red;
+	//	}
+	//}
+	//@include mq-sp {
+	//	&:before {
+	//		content: "mq-sp";
+	//		background-color: blue;
+	//	}
+	//}
 	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
-header {
-	background-color: $color_white;
-	padding: 0 1rem;
-	.inner {
-		@include mq-pc {
-			height: 5rem;
-		}
-		@include mq-sp {
-			height: 2.5rem;
-		}
-	}
-}
-
-footer {
-	background-color: #6ebbd4;
-	padding: 1rem 1rem;
-
-	.inner {
-		//padding-bottom: 0;
-		//border: 0;
-		//padding: 1rem 2rem 0;
-		//margin-top: 0.2rem;
-		color: white;
-		//font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-
-		.body{
-			display: flex;
-
-			@include mq-pc{
-				justify-content: space-between;
-				vertical-align: middle;
-				align-items: center;
-
-			}
-			@include mq-sp{
-				justify-content: space-around;
-				vertical-align: middle;
-				align-items: center;
-			}
-			.left{
-				img[src="https://placehold.jp/150x150.png"]{
-					width: 30%;
-					height: 2rem;
-					margin-bottom: 0.5rem;
-				text-align: left;
-				}
-			}
-			.right{
-				text-align: right;
-			}
-		}
-
-		.copy{
-			text-align: center;
-			margin-top: 1rem;
-		}
-	}
 }
 
 main {
@@ -109,6 +50,12 @@ section {
 	margin: auto;
 }
 
+@import "header";
+@import "footer";
 @import "main-visual";
-@import "pick-up-news";
-@import "main-contents";
+@import "vision";
+@import "about-sp";
+@import "concept";
+@import "info";
+//@import "pick-up-news";
+//@import "main-contents";

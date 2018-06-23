@@ -13,7 +13,7 @@ z-index
  */
 html, :root {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #fff;
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -79,37 +79,25 @@ em {
 
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-  body:before {
-    position: absolute;
-    display: inline-block;
-    z-index: 1000;
-    font-size: large; }
-  @media (min-width: 1441px) {
-    body:before {
-      content: "mq-xl"; } }
-  @media screen and (min-width: 769px) and (max-width: 1440px) {
-    body:before {
-      content: "mq-md"; } }
-  @media screen and (min-width: 751px) and (max-width: 768px) {
-    body:before {
-      content: "mq-tb"; } }
-  @media screen and (min-width: 751px) {
-    body:before {
-      background-color: red; } }
-  @media screen and (max-width: 750px) {
-    body:before {
-      content: "mq-sp";
-      background-color: blue; } }
+
+section {
+  padding: 1rem 1rem; }
+
+.inner {
+  max-width: 1160px;
+  margin: auto; }
 
 header {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 0 1rem; }
-  @media screen and (min-width: 751px) {
-    header .inner {
-      height: 5rem; } }
-  @media screen and (max-width: 750px) {
-    header .inner {
-      height: 2.5rem; } }
+  background-color: #fff;
+  padding: 1rem 0; }
+  header .inner .logo img {
+    width: auto; }
+    @media screen and (min-width: 751px) {
+      header .inner .logo img {
+        height: 3rem; } }
+    @media screen and (max-width: 750px) {
+      header .inner .logo img {
+        height: 2rem; } }
 
 footer {
   background-color: #6ebbd4;
@@ -128,42 +116,31 @@ footer {
           justify-content: space-around;
           vertical-align: middle;
           align-items: center; } }
-      footer .inner .body .left img[src="https://placehold.jp/150x150.png"] {
-        width: 30%;
-        height: 2rem;
-        margin-bottom: 0.5rem;
-        text-align: left; }
+      footer .inner .body .left img {
+        width: auto;
+        height: 2rem; }
       footer .inner .body .right {
         text-align: right; }
     footer .inner .copy {
       text-align: center;
       margin-top: 1rem; }
 
-section {
-  padding: 1rem 1rem; }
-
-.inner {
-  max-width: 1160px;
-  margin: auto; }
-
 .main-visual {
-  padding: 0; }
-  .main-visual .body {
+  padding: 0;
+  height: 80vh;
+  position: relative; }
+  .main-visual .upper, .main-visual .under {
     width: 100%;
-    height: 20rem;
-    position: relative; }
-    .main-visual .body .upper, .main-visual .body .under {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      position: absolute; }
-    .main-visual .body[data-index="0"] .upper {
-      background-image: url("../img/main6.jpg"); }
-    .main-visual .body[data-index="1"] .upper {
-      animation: mvAnime1 1s forwards;
-      background-image: url("../img/seishun1.jpg"); }
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute; }
+  .main-visual[data-index="0"] .upper {
+    background-image: url("../img/main6.jpg"); }
+  .main-visual[data-index="1"] .upper {
+    animation: mvAnime1 1s forwards;
+    background-image: url("../img/seishun1.jpg"); }
 
 @keyframes mvAnime1 {
   0% {
@@ -172,11 +149,11 @@ section {
   100% {
     opacity: 1;
     transform: scale(1); } }
-    .main-visual .body[data-index="1"] .under {
-      background-image: url("../img/main6.jpg"); }
-    .main-visual .body[data-index="2"] .upper {
-      animation: mvAnime2 1s forwards;
-      background-image: url("../img/main4.jpg"); }
+  .main-visual[data-index="1"] .under {
+    background-image: url("../img/main6.jpg"); }
+  .main-visual[data-index="2"] .upper {
+    animation: mvAnime2 1s forwards;
+    background-image: url("../img/main4.jpg"); }
 
 @keyframes mvAnime2 {
   0% {
@@ -185,11 +162,11 @@ section {
   100% {
     opacity: 1;
     transform: scale(1); } }
-    .main-visual .body[data-index="2"] .under {
-      background-image: url("../img/seishun1.jpg"); }
-    .main-visual .body[data-index="3"] .upper {
-      animation: mvAnime3 1s forwards;
-      background-image: url("../img/main5.jpg"); }
+  .main-visual[data-index="2"] .under {
+    background-image: url("../img/seishun1.jpg"); }
+  .main-visual[data-index="3"] .upper {
+    animation: mvAnime3 1s forwards;
+    background-image: url("../img/main5.jpg"); }
 
 @keyframes mvAnime3 {
   0% {
@@ -198,11 +175,11 @@ section {
   100% {
     opacity: 1;
     transform: scale(1); } }
-    .main-visual .body[data-index="3"] .under {
-      background-image: url("../img/main4.jpg"); }
-    .main-visual .body[data-index="4"] .upper {
-      animation: mvAnime4 1s forwards;
-      background-image: url("../img/main6.jpg"); }
+  .main-visual[data-index="3"] .under {
+    background-image: url("../img/main4.jpg"); }
+  .main-visual[data-index="4"] .upper {
+    animation: mvAnime4 1s forwards;
+    background-image: url("../img/main6.jpg"); }
 
 @keyframes mvAnime4 {
   0% {
@@ -211,163 +188,65 @@ section {
   100% {
     opacity: 1;
     transform: scale(1); } }
-    .main-visual .body[data-index="4"] .under {
-      background-image: url("../img/main5.jpg"); }
-    .main-visual .body .bgImg {
-      width: 100%;
-      height: 20rem;
-      position: absolute;
-      opacity: 0;
-      animation: bgAnime 20s infinite;
-      /* 4画像 × 各5s = 20s */ }
-    .main-visual .body .src1 {
-      background-image: url(../img/main4.jpg);
-      /* 背景の画像を指定 */
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .main-visual .body .src2 {
-      background-image: url(../img/main5.jpg);
-      /* 背景の画像を指定 */
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      animation-delay: 5s; }
-    .main-visual .body .src3 {
-      background-image: url(../img/main6.jpg);
-      /* 背景の画像を指定 */
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      animation-delay: 10s; }
-    .main-visual .body .src4 {
-      background-image: url(../img/main3.jpg);
-      /* 背景の画像を指定 */
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      animation-delay: 15s; }
-
-@keyframes bgAnime {
-  0% {
-    opacity: 0; }
-  7% {
-    opacity: 1; }
-  23% {
-    opacity: 1; }
-  30% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-    .main-visual .body h2 {
-      display: none; }
-
-.pick-up-news {
-  background: white;
-  margin-top: 0px;
-  border: 0; }
-  .pick-up-news .inner {
-    border: 0; }
-    .pick-up-news .inner ul {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; }
-      @media screen and (min-width: 751px) {
-        .pick-up-news .inner ul li {
-          width: calc(100% / 4 - 0.5rem); } }
-      @media screen and (max-width: 750px) {
-        .pick-up-news .inner ul li {
-          width: calc(100% / 2 - 0.5rem); } }
-      .pick-up-news .inner ul li .thumb img {
-        border: 0;
-        box-shadow: 0 0 5px gray;
-        cursor: pointer; }
-      .pick-up-news .inner ul li .lead {
-        color: green; }
-
-.main-contents .inner {
-  border: 0; }
-  .main-contents .inner .vision {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
-    height: 12rem;
-    background-image: url("https://placehold.jp/150x150.png");
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .main-visual[data-index="4"] .under {
+    background-image: url("../img/main5.jpg"); }
+  .main-visual .inner {
+    height: 100%;
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
-    .main-contents .inner .vision .body h4 {
-      display: none; }
-    .main-contents .inner .vision .body img[src="https://placehold.jp/150x150.png"] {
-      width: 100%;
-      height: 4rem;
-      margin-bottom: 0.5rem; }
-    .main-contents .inner .vision .body .lead {
-      color: white;
-      font-size: 0.5rem;
-      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-  .main-contents .inner .activity {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
-    height: 12rem;
-    background-image: url("https://placehold.jp/150x150.png");
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
-    .main-contents .inner .activity .body h4 {
-      display: none; }
-    .main-contents .inner .activity .body .leadtitle {
-      color: white;
-      font-size: 2rem;
-      font-family: 'Tsukushi A Round Gothic', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-    .main-contents .inner .activity .body .leadsub {
-      color: white;
-      font-size: 0.5rem;
-      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-      margin-bottom: 0.5rem; }
-    .main-contents .inner .activity .body .lead {
-      color: white;
-      font-size: 0.5rem;
-      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-  .main-contents .inner .suport {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
-    height: 12rem;
-    background-image: url("https://placehold.jp/150x150.png");
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
-    .main-contents .inner .suport .body h4 {
-      display: none; }
-    .main-contents .inner .suport .body .leadtitle {
-      color: white;
-      font-size: 2rem;
-      font-family: 'Tsukushi A Round Gothic', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-    .main-contents .inner .suport .body .leadsub {
-      color: white;
-      font-size: 0.5rem;
-      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-      margin-bottom: 0.5rem; }
-    .main-contents .inner .suport .body .lead {
-      color: white;
-      font-size: 0.5rem;
-      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 1rem; }
+    .main-visual .inner .lead span {
+      display: block;
+      background-color: #fff;
+      color: #000;
+      line-height: 1;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      font-size: 24px; }
+  .main-visual .body h2 {
+    display: none; }
+
+.vision {
+  background-color: #6ebbd4;
+  color: #fff; }
+  .vision .inner p {
+    font-size: 20px; }
+    .vision .inner p + p {
+      margin-top: 1rem; }
+
+.about-sp .inner h2 {
+  text-align: center; }
+
+.about-sp .inner p {
+  font-size: 20px;
+  color: #000; }
+  .about-sp .inner p + p {
+    margin-top: 1rem; }
+
+.concept {
+  background-color: #6ebbd4;
+  color: #fff; }
+  .concept .inner h2 {
+    text-align: center; }
+  .concept .inner p {
+    font-size: 20px;
+    color: #000; }
+    .concept .inner p + p {
+      margin-top: 1rem; }
+
+.info .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .info .inner h2 {
+    text-align: center; }
+  .info .inner table th {
+    text-align: left;
+    font-weight: normal; }
+  .info .inner .document dl dd {
+    display: block; }
 
 /*# sourceMappingURL=index.css.map */

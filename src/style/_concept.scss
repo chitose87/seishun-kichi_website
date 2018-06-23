@@ -1,0 +1,15 @@
+.concept {
+	background-color: $color_blue;
+	color: $color_white;
+	.inner {
+		h2 {
+			text-align: center;
+		}
+		p {
+			font-size: 20px;
+			& + p {
+				margin-top: 1rem;
+			}
+		}
+	}
+}

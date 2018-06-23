@@ -1,0 +1,12 @@
+.vision {
+	background-color: $color_blue;
+	color: $color_white;
+	.inner {
+		p {
+			font-size: 20px;
+			& + p {
+				margin-top: 1rem;
+			}
+		}
+	}
+}

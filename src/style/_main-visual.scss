@@ -1,126 +1,177 @@
 .main-visual {
 	padding: 0;
-	.body{
+	height: 80vh;
+	position: relative;
+	.upper, .under {
 		width: 100%;
-		height: 20rem;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+	&[data-index="0"] {
+		.upper {
+			background-image: url("../img/main6.jpg");
+		}
+	}
+	&[data-index="1"] {
+		.upper {
+			animation: mvAnime1 1s forwards;
+			@keyframes mvAnime1 {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			background-image: url("../img/seishun1.jpg");
+		}
+		.under {
+			background-image: url("../img/main6.jpg");
+		}
+	}
+	&[data-index="2"] {
+		.upper {
+			animation: mvAnime2 1s forwards;
+			@keyframes mvAnime2 {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			background-image: url("../img/main4.jpg");
+		}
+		.under {
+			background-image: url("../img/seishun1.jpg");
+		}
+	}
+	&[data-index="3"] {
+		.upper {
+			animation: mvAnime3 1s forwards;
+			@keyframes mvAnime3 {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			background-image: url("../img/main5.jpg");
+		}
+		.under {
+			background-image: url("../img/main4.jpg");
+		}
+	}
+	&[data-index="4"] {
+		.upper {
+			animation: mvAnime4 1s forwards;
+			@keyframes mvAnime4 {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			background-image: url("../img/main6.jpg");
+		}
+		.under {
+			background-image: url("../img/main5.jpg");
+		}
+	}
+	.inner {
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
 		position: relative;
-		.upper,.under{
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			position: absolute;
-		}
-		&[data-index="0"]{
-			.upper{
-				background-image: url("../img/main6.jpg");
+		padding-bottom: 1rem;
+		.lead {
+			span {
+				display: block;
+				background-color: $color_white;
+				color: $color_black;
+				line-height: 1;
+				margin-top: 0.5rem;
+				padding: 0.5rem;
+				font-size: 24px;
 			}
 		}
-		&[data-index="1"]{
-			.upper{
-				animation: mvAnime1 1s forwards;
-				@keyframes mvAnime1 {
-					0% { opacity: 0; transform: scale(0.8);}
-					100% { opacity: 1;  transform: scale(1);}
-				}
-				background-image: url("../img/seishun1.jpg");
-			}
-			.under{
-				background-image: url("../img/main6.jpg");
-			}
-		}
-		&[data-index="2"] {
-			.upper {
-				animation: mvAnime2 1s forwards;
-				@keyframes mvAnime2 {
-					0% { opacity: 0; transform: scale(0.8);}
-					100% { opacity: 1;  transform: scale(1);}
-				}
-				background-image: url("../img/main4.jpg");
-			}
-			.under {
-				background-image: url("../img/seishun1.jpg");
-			}
-		}
-		&[data-index="3"] {
-			.upper {
-				animation: mvAnime3 1s forwards;
-				@keyframes mvAnime3 {
-					0% { opacity: 0; transform: scale(0.8);}
-					100% { opacity: 1;  transform: scale(1);}
-				}
-				background-image: url("../img/main5.jpg");
-			}
-			.under {
-				background-image: url("../img/main4.jpg");
-			}
-		}
-		&[data-index="4"] {
-			.upper {
-				animation: mvAnime4 1s forwards;
-				@keyframes mvAnime4 {
-					0% { opacity: 0; transform: scale(0.8);}
-					100% { opacity: 1;  transform: scale(1);}
-				}
-				background-image: url("../img/main6.jpg");
-			}
-			.under {
-				background-image: url("../img/main5.jpg");
-			}
-		}
-
+	}
+	.body {
 
 		//テスト（アニメーション　フェードインとフェードアウトで画像切り替え）
-		.bgImg {
-			width: 100%;
-			height: 20rem;
-			position: absolute;
-			//top        : 0;
-			//left       : 0;
-			//bottom     : 0;
-			//right      : 0;
-			opacity    : 0;
-			animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
-		}
-		.src1 {
-			background-image : url(../img/main4.jpg);   /* 背景の画像を指定 */
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-		.src2 {
-			background-image : url(../img/main5.jpg);   /* 背景の画像を指定 */
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			animation-delay  : 5s;
-		}
-		.src3 {
-			background-image : url(../img/main6.jpg);   /* 背景の画像を指定 */
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			animation-delay  : 10s;
-		}
-		.src4 {
-			background-image : url(../img/main3.jpg);   /* 背景の画像を指定 */
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			animation-delay  : 15s;
-		}
-		@keyframes bgAnime {
-			0% { opacity: 0; }
-			7% { opacity: 1; }
-			23% { opacity: 1; }
-			30% { opacity: 0; }
-			100% { opacity: 0; }
-		}
+		//.bgImg {
+		//	width: 100%;
+		//	height: 20rem;
+		//	position: absolute;
+		//	//top        : 0;
+		//	//left       : 0;
+		//	//bottom     : 0;
+		//	//right      : 0;
+		//	opacity: 0;
+		//	animation: bgAnime 20s infinite; /* 4画像 × 各5s = 20s */
+		//}
+		//.src1 {
+		//	background-image: url(../img/main4.jpg); /* 背景の画像を指定 */
+		//	background-position: center center;
+		//	background-size: cover;
+		//	background-repeat: no-repeat;
+		//}
+		//.src2 {
+		//	background-image: url(../img/main5.jpg); /* 背景の画像を指定 */
+		//	background-position: center center;
+		//	background-size: cover;
+		//	background-repeat: no-repeat;
+		//	animation-delay: 5s;
+		//}
+		//.src3 {
+		//	background-image: url(../img/main6.jpg); /* 背景の画像を指定 */
+		//	background-position: center center;
+		//	background-size: cover;
+		//	background-repeat: no-repeat;
+		//	animation-delay: 10s;
+		//}
+		//.src4 {
+		//	background-image: url(../img/main3.jpg); /* 背景の画像を指定 */
+		//	background-position: center center;
+		//	background-size: cover;
+		//	background-repeat: no-repeat;
+		//	animation-delay: 15s;
+		//}
+		//@keyframes bgAnime {
+		//	0% {
+		//		opacity: 0;
+		//	}
+		//	7% {
+		//		opacity: 1;
+		//	}
+		//	23% {
+		//		opacity: 1;
+		//	}
+		//	30% {
+		//		opacity: 0;
+		//	}
+		//	100% {
+		//		opacity: 0;
+		//	}
+		//}
 
 		//テスト（アニメーション）
 
-		h2{
+		h2 {
 			display: none;
 		}
 	}
