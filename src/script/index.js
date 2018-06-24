@@ -1,23 +1,31 @@
 // var mv = document.getElementById("mv-body");
 var mv = document.getElementsByClassName("main-visual")[0];
+var mv_upper = mv.getElementsByClassName("upper")[0];
+var mv_under = mv.getElementsByClassName("under")[0];
 // var mvBody = mv.getElementsByClassName("body")[0];
 
 // console.log(mv,mvBody);
 
-var index=0;
-var timer1;
+var i = 0;
+var l = 5;
+var toggle = true;
+
 function change() {
-    index++;
-    if(index>4){
-       index=1;
+    i++;
+    if (i > l) {
+        i = 1;
     }
-    mv.setAttribute("data-index",index);
+    var n = (i - 1 == 0) ? l : i - 1;
+
+    (toggle ? mv_upper : mv_under).style.backgroundImage = 'url(../img/mv/mv_' + i + '.jpg)';
+    (toggle ? mv_under : mv_upper).style.backgroundImage = 'url(../img/mv/mv_' + n + '.jpg)';
+
+    mv.setAttribute("data-toggle", toggle);
+    toggle = !toggle
 }
 
-timer1 = setInterval(change, 5000);
-
-
-
+change();
+setInterval(change, 5000);
 
 
 // テストの為、コメント化　↓
@@ -39,11 +47,6 @@ timer1 = setInterval(change, 5000);
 // timer1 = setInterval(change, 3000);
 
 // テストの為、コメント化　↑
-
-
-
-
-
 
 
 // ここから下は不要
@@ -79,14 +82,6 @@ timer1 = setInterval(change, 5000);
 //     console.log(mv);
 // })();
 //
-
-
-
-
-
-
-
-
 
 
 // onload = function(){
@@ -125,9 +120,6 @@ timer1 = setInterval(change, 5000);
 // ここまで
 
 
-
-
-
 // ここから
 //
 // var url = "../img/";
@@ -153,7 +145,6 @@ timer1 = setInterval(change, 5000);
 // ここまで
 
 // setInterval("change()",3000);
-
 
 
 // // ここから
@@ -221,7 +212,6 @@ timer1 = setInterval(change, 5000);
 //
 //     }
 // )
-
 
 
 // img = Array();

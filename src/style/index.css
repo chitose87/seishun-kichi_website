@@ -121,68 +121,29 @@ footer {
 .main-visual {
   padding: 0;
   height: 80vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .main-visual .upper, .main-visual .under {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    position: absolute; }
-  .main-visual[data-index="0"] .upper {
-    background-image: url("../img/main6.jpg"); }
-  .main-visual[data-index="1"] .upper {
-    animation: mvAnime1 1s forwards;
-    background-image: url("../img/seishun1.jpg"); }
-
-@keyframes mvAnime1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.8); }
-  100% {
+    position: absolute;
+    transform: scale(1);
+    transition: opacity 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, transform 4s cubic-bezier(0.39, 0.575, 0.565, 1) 0s; }
+  .main-visual[data-toggle="true"] .upper {
     opacity: 1;
-    transform: scale(1); } }
-  .main-visual[data-index="1"] .under {
-    background-image: url("../img/main6.jpg"); }
-  .main-visual[data-index="2"] .upper {
-    animation: mvAnime2 1s forwards;
-    background-image: url("../img/main4.jpg"); }
-
-@keyframes mvAnime2 {
-  0% {
+    transform: scale(1.08); }
+  .main-visual[data-toggle="true"] .under {
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 4s; }
+  .main-visual[data-toggle="false"] .upper {
     opacity: 0;
-    transform: scale(0.8); }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
-  .main-visual[data-index="2"] .under {
-    background-image: url("../img/seishun1.jpg"); }
-  .main-visual[data-index="3"] .upper {
-    animation: mvAnime3 1s forwards;
-    background-image: url("../img/main5.jpg"); }
-
-@keyframes mvAnime3 {
-  0% {
-    opacity: 0;
-    transform: scale(0.8); }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
-  .main-visual[data-index="3"] .under {
-    background-image: url("../img/main4.jpg"); }
-  .main-visual[data-index="4"] .upper {
-    animation: mvAnime4 1s forwards;
-    background-image: url("../img/main6.jpg"); }
-
-@keyframes mvAnime4 {
-  0% {
-    opacity: 0;
-    transform: scale(0.8); }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
-  .main-visual[data-index="4"] .under {
-    background-image: url("../img/main5.jpg"); }
+    transition-duration: 1s, 0s;
+    transition-delay: 0s, 4s; }
+  .main-visual[data-toggle="false"] .under {
+    transform: scale(1.08); }
   .main-visual .inner {
     height: 100%;
     display: flex;
@@ -191,19 +152,17 @@ footer {
     position: relative;
     padding-bottom: 1rem; }
     .main-visual .inner .lead span {
-      display: block;
+      display: inline-block;
       background-color: #fff;
       color: #000;
       line-height: 1;
       margin-top: 0.5rem;
       padding: 0.5rem;
       font-size: 24px; }
-  .main-visual .body h2 {
-    display: none; }
 
 .vision .inner {
   min-height: 80vh;
-  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-image: url(../img/vision_bg.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -214,7 +173,7 @@ footer {
 
 .about-sp .inner {
   min-height: 80vh;
-  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-image: url(../img/about-sp_bg.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -231,7 +190,7 @@ footer {
 
 .concept .inner {
   min-height: 80vh;
-  background-image: url(https://en-konkatsu.com/koitori/wp/wp-content/uploads/2017/01/5f42199b2145e62f5b68f7b484d8225b-720x480.jpg);
+  background-image: url(../img/concept_bg.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
