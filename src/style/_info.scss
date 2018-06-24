@@ -1,25 +1,35 @@
 .info {
 	.inner {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		h2 {
-			text-align: center;
+		justify-content: space-around;
+		@include mq-pc {
+			flex-direction: row;
 		}
+		@include mq-sp {
+			flex-direction: column;
+		}
+	}
+	&__detail {
+		flex: 1;
+		max-width: 500px;
+		margin-right: 0.75rem;
+
 		table {
+			width: 100%;
+			border-collapse: collapse;
+
 			tr {
 
 			}
 			th {
 				text-align: left;
 				font-weight: normal;
+				border: 1px solid $color_gray1;
 			}
 			td {
-
+				border: 1px solid $color_gray1;
 			}
 		}
-
 		.document {
 			h3 {
 			}
@@ -35,5 +45,10 @@
 				}
 			}
 		}
+	}
+	&__news {
+		flex: 1;
+		max-width: 500px;
+		margin-left: 0.75rem;
 	}
 }

@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var cache = require('gulp-cached');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
+var pug = require('gulp-pug');
 
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -16,6 +17,21 @@ var dir = {
     dev: './src',
     dist: './dist'
 };
+
+gulp.task('pug', function () {
+    return gulp
+        .src([
+            dir.dev + '/**/*.pug',
+            '!' + dir.dev + '/**/_template/**/*.pug'
+        ])
+        .pipe(cache('pug'))
+        .pipe(plumber())
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest(dir.dev));
+});
+
 
 gulp.task('style', function () {
     return gulp
@@ -55,6 +71,9 @@ gulp.task('watch', function () {
     watch(dir.dev + '/**/*.scss', function () {
         gulp.start('style');
     });
+    watch(dir.dev + '/**/*.pug', function () {
+        gulp.start('pug');
+    });
 });
 
 gulp.task('clean', function () {
@@ -74,7 +93,7 @@ gulp.task('copy', function () {
 gulp.task('default', ['watch', 'server']);
 gulp.task('build', function (callback) {
     return runSequence(
-        'clean', 'style', 'copy',
+        'clean', 'pug', 'style', 'copy',
         callback
     );
 });

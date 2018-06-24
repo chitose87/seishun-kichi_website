@@ -1,54 +1,50 @@
 @import "util";
 @import 'init';
 
-body {
-	//&:before {
-	//	position: absolute;
-	//	display: inline-block;
-	//	z-index: 1000;
-	//	font-size: large;
-	//}
-	//@include mq-xl {
-	//	&:before {
-	//		content: "mq-xl";
-	//	}
-	//}
-	//@include mq-md {
-	//	&:before {
-	//		content: "mq-md";
-	//	}
-	//}
-	//@include mq-tb {
-	//	&:before {
-	//		content: "mq-tb";
-	//	}
-	//}
-	//@include mq-pc {
-	//	&:before {
-	//		background-color: red;
-	//	}
-	//}
-	//@include mq-sp {
-	//	&:before {
-	//		content: "mq-sp";
-	//		background-color: blue;
-	//	}
-	//}
-	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-}
-
 main {
 }
 
 section {
-	padding: 1rem 1rem;
+	padding: 2.5rem 1rem;
 }
 
 .inner {
-	//border: 1px solid rgba($color_red, 0.8);
 	width: 100%;
 	max-width: 1160px;
 	margin: auto;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 2rem;
+	.text {
+		font-size: 48px;
+		display: inline-block;
+		font-weight: normal;
+		background-color: rgba($color_black, 0.3);
+		color: $color_white;
+		line-height: 1;
+		padding: 0.5em;
+	}
+	.en {
+		font-size: 18px;
+		display: inline-block;
+		background-color: rgba($color_black, 0.3);
+		color: $color_white;
+		line-height: 1;
+		padding: 0.5em;
+		margin-top: 0.25rem;
+	}
+
+	&.notBg {
+		padding: 0.5rem;
+		margin-bottom: 1rem;
+		* {
+			background-color: inherit;
+			color: inherit;
+			padding: 0;
+		}
+	}
 }
 
 p + p {
@@ -59,9 +55,8 @@ p + p {
 @import "footer";
 @import "main-visual";
 @import "vision";
-@import "about-sp";
-@import "fb-area";
-@import "concept";
+@import "service";
 @import "info";
+@import "concept";
 //@import "pick-up-news";
 //@import "main-contents";

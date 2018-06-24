@@ -4,7 +4,7 @@ html, :root {
 	box-sizing: border-box;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Mplus 1p", "Sawarabi Gothic", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 
 	@include mq-pc {
 		font-size: 24px;
@@ -58,7 +58,7 @@ a {
 	word-wrap: break-word;
 }
 
-ul,ol{
+ul, ol {
 	list-style: none;
 }
 

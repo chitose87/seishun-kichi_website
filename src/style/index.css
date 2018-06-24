@@ -17,7 +17,7 @@ html, :root {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "Mplus 1p", "Sawarabi Gothic", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
   @media screen and (min-width: 751px) {
     html, :root {
       font-size: 24px; } }
@@ -77,16 +77,40 @@ a {
 em {
   font-weight: bolder; }
 
-body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
-
 section {
-  padding: 1rem 1rem; }
+  padding: 2.5rem 1rem; }
 
 .inner {
   width: 100%;
   max-width: 1160px;
   margin: auto; }
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem; }
+  .title .text {
+    font-size: 48px;
+    display: inline-block;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    line-height: 1;
+    padding: 0.5em; }
+  .title .en {
+    font-size: 18px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    line-height: 1;
+    padding: 0.5em;
+    margin-top: 0.25rem; }
+  .title.notBg {
+    padding: 0.5rem;
+    margin-bottom: 1rem; }
+    .title.notBg * {
+      background-color: inherit;
+      color: inherit;
+      padding: 0; }
 
 p + p {
   margin-top: 1rem; }
@@ -109,7 +133,8 @@ footer {
   footer .inner {
     color: white; }
     footer .inner .body {
-      display: flex; }
+      display: flex;
+      justify-content: space-between; }
       footer .inner .body .left img {
         width: auto;
         height: 2rem;
@@ -161,7 +186,7 @@ footer {
       font-size: 24px; }
 
 .vision .inner {
-  min-height: 80vh;
+  min-height: 110vh;
   background-image: url(../img/vision_bg.jpg);
   background-size: cover;
   background-position: center center;
@@ -169,24 +194,53 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 0; }
 
-.about-sp .inner {
-  min-height: 80vh;
-  background-image: url(../img/about-sp_bg.jpg);
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center; }
+.service {
+  background-color: #6ebbd4; }
+  .service .about-sp .inner {
+    min-height: 80vh;
+    background-image: url(../img/about-sp_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem 0; }
 
-.fb-area .inner .fb-page {
-  width: 100%;
+.info .inner {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-around; }
+  @media screen and (min-width: 751px) {
+    .info .inner {
+      flex-direction: row; } }
+  @media screen and (max-width: 750px) {
+    .info .inner {
+      flex-direction: column; } }
+
+.info__detail {
+  flex: 1;
+  max-width: 500px;
+  margin-right: 0.75rem; }
+  .info__detail table {
+    width: 100%;
+    border-collapse: collapse; }
+    .info__detail table th {
+      text-align: left;
+      font-weight: normal;
+      border: 1px solid #313131; }
+    .info__detail table td {
+      border: 1px solid #313131; }
+  .info__detail .document dl dd {
+    display: block; }
+
+.info__news {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 0.75rem; }
 
 .concept .inner {
   min-height: 80vh;
@@ -197,19 +251,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center; }
-
-.info .inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .info .inner h2 {
-    text-align: center; }
-  .info .inner table th {
-    text-align: left;
-    font-weight: normal; }
-  .info .inner .document dl dd {
-    display: block; }
+  text-align: center;
+  padding: 2rem 0; }
 
 /*# sourceMappingURL=index.css.map */

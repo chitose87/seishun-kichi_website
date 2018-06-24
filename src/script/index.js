@@ -43,7 +43,7 @@ setInterval(change, 5000);
 //     }
 //     mv.style.backgroundImage = 'url(' + img[i] + ')';
 // }
-//
+mine//
 // timer1 = setInterval(change, 3000);
 
 // テストの為、コメント化　↑
