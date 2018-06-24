@@ -17,8 +17,8 @@ function change() {
     }
     var n = (i - 1 == 0) ? l : i - 1;
 
-    (toggle ? mv_upper : mv_under).style.backgroundImage = 'url(../img/mv/mv_' + i + '.jpg)';
-    (toggle ? mv_under : mv_upper).style.backgroundImage = 'url(../img/mv/mv_' + n + '.jpg)';
+    (toggle ? mv_upper : mv_under).style.backgroundImage = 'url(./img/mv/mv_' + i + '.jpg)';
+    (toggle ? mv_under : mv_upper).style.backgroundImage = 'url(./img/mv/mv_' + n + '.jpg)';
 
     mv.setAttribute("data-toggle", toggle);
     toggle = !toggle
