@@ -23,7 +23,7 @@ html, :root {
       font-size: 24px; } }
   @media screen and (max-width: 750px) {
     html, :root {
-      font-size: 24px; } }
+      font-size: 15px; } }
 
 @media screen and (min-width: 751px) {
   body {
@@ -97,20 +97,30 @@ section {
   text-align: center;
   margin-bottom: 2rem; }
   .title .text {
-    font-size: 38px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     line-height: 1;
     padding: 0.5rem; }
+    @media screen and (min-width: 751px) {
+      .title .text {
+        font-size: 38px; } }
+    @media screen and (max-width: 750px) {
+      .title .text {
+        font-size: 25px; } }
   .title .en {
-    font-size: 18px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     line-height: 1;
     padding: 0.5rem;
     margin-top: 0.25rem; }
+    @media screen and (min-width: 751px) {
+      .title .en {
+        font-size: 18px; } }
+    @media screen and (max-width: 750px) {
+      .title .en {
+        font-size: 15px; } }
   .title.notBg {
     padding: 0.5rem;
     margin-bottom: 1rem; }
@@ -187,18 +197,22 @@ footer {
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
-    padding-bottom: 1rem; }
+    padding-bottom: 3rem; }
     .main-visual .inner .lead span {
       display: inline-block;
       background-color: #fff;
       color: #333;
       line-height: 1;
       margin-top: 0.5rem;
-      padding: 0.5rem;
-      font-size: 24px; }
+      padding: 0.5rem; }
+      @media screen and (min-width: 751px) {
+        .main-visual .inner .lead span {
+          font-size: 24px; } }
+      @media screen and (max-width: 750px) {
+        .main-visual .inner .lead span {
+          font-size: 14px; } }
 
 .vision .inner {
-  min-height: 110vh;
   background-image: url(../img/vision_bg.jpg);
   background-size: cover;
   background-position: center center;
@@ -207,7 +221,10 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  padding: 2rem 0; }
+  padding: 4rem 1rem; }
+  @media screen and (min-width: 751px) {
+    .vision .inner {
+      min-height: 110vh; } }
 
 .service {
   position: relative;
@@ -239,7 +256,6 @@ footer {
   .service .about-sp {
     position: relative; }
     .service .about-sp .inner {
-      min-height: 80vh;
       background-image: url(../img/about-sp_bg.jpg);
       background-size: cover;
       background-position: center center;
@@ -248,7 +264,26 @@ footer {
       align-items: center;
       color: white;
       text-align: center;
-      padding: 2rem 0; }
+      padding: 4rem 1rem; }
+      @media screen and (min-width: 751px) {
+        .service .about-sp .inner {
+          min-height: 80vh; } }
+  .service .about-magazine {
+    position: relative;
+    margin-top: 2rem; }
+    .service .about-magazine .inner {
+      background-image: url(../img/about-sp_bg.jpg);
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem; }
+      @media screen and (min-width: 751px) {
+        .service .about-magazine .inner {
+          min-height: 80vh; } }
 
 .info {
   padding-bottom: 0; }
@@ -264,8 +299,10 @@ footer {
   .info__detail {
     flex: 1;
     max-width: 500px;
-    margin-right: 0.75rem;
     background-color: #fff; }
+    @media screen and (min-width: 751px) {
+      .info__detail {
+        margin-right: 0.75rem; } }
     .info__detail table {
       width: 100%;
       border-collapse: collapse; }
@@ -303,11 +340,16 @@ footer {
   .info__news {
     flex: 1;
     max-width: 500px;
-    margin-left: 0.75rem;
     background-color: #fff; }
+    @media screen and (min-width: 751px) {
+      .info__news {
+        margin-left: 0.75rem; } }
+    @media screen and (max-width: 750px) {
+      .info__news {
+        padding: 0 2rem;
+        margin-top: 3rem; } }
 
 .concept .inner {
-  min-height: 80vh;
   background-image: url(../img/concept_bg.jpg);
   background-size: cover;
   background-position: center center;
@@ -316,6 +358,12 @@ footer {
   align-items: center;
   color: #fff;
   text-align: center;
-  padding: 2rem 0; }
+  padding: 4rem 1rem; }
+  @media screen and (min-width: 751px) {
+    .concept .inner {
+      min-height: 80vh; } }
+  @media screen and (max-width: 750px) {
+    .concept .inner {
+      margin-top: 2rem; } }
 
 /*# sourceMappingURL=index.css.map */

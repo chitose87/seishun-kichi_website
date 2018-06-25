@@ -27,21 +27,31 @@ section {
 	text-align: center;
 	margin-bottom: 2rem;
 	.text {
-		font-size: 38px;
 		display: inline-block;
 		background-color: rgba($color_black, 0.3);
 		color: $color_white;
 		line-height: 1;
 		padding: 0.5rem;
+		@include mq-pc {
+			font-size: 38px;
+		}
+		@include mq-sp {
+			font-size: 25px;
+		}
 	}
 	.en {
-		font-size: 18px;
 		display: inline-block;
 		background-color: rgba($color_black, 0.3);
 		color: $color_white;
 		line-height: 1;
 		padding: 0.5rem;
 		margin-top: 0.25rem;
+		@include mq-pc {
+			font-size: 18px;
+		}
+		@include mq-sp {
+			font-size: 15px;
+		}
 	}
 
 	&.notBg {

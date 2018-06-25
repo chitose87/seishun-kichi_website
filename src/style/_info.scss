@@ -13,8 +13,12 @@
 	&__detail {
 		flex: 1;
 		max-width: 500px;
-		margin-right: 0.75rem;
 		background-color: $color_white;
+		@include mq-pc {
+			margin-right: 0.75rem;
+		}
+		@include mq-sp {
+		}
 		table {
 			width: 100%;
 			border-collapse: collapse;
@@ -71,7 +75,13 @@
 	&__news {
 		flex: 1;
 		max-width: 500px;
-		margin-left: 0.75rem;
 		background-color: $color_white;
+		@include mq-pc {
+			margin-left: 0.75rem;
+		}
+		@include mq-sp {
+			padding: 0 2rem;
+			margin-top: 3rem;
+		}
 	}
 }

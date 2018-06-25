@@ -1,6 +1,5 @@
 .concept {
 	.inner {
-		min-height: 80vh;
 		background-image: url(../img/concept_bg.jpg);
 		background-size: cover;
 		background-position: center center;
@@ -9,7 +8,13 @@
 		align-items: center;
 		color: $color_white;
 		text-align: center;
-		padding: 2rem 0;
+		padding: 4rem 1rem;
+		@include mq-pc {
+			min-height: 80vh;
+		}
+		@include mq-sp {
+			margin-top: 2rem;
+		}
 		.body {
 
 		}
