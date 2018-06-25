@@ -1,5 +1,5 @@
 html, :root {
-	color: $color_black;
+	color: $color_text_black;
 	background-color: $color_white;
 	box-sizing: border-box;
 	-ms-text-size-adjust: 100%;
@@ -64,19 +64,23 @@ ul, ol {
 
 // ----- ----- ----- ----- font style
 
+h2 {
+	font-weight: normal;
+}
+
 h3 {
-	font-weight: bolder;
+	font-weight: normal;
 }
 
 h4 {
-	font-weight: bolder;
+	font-weight: normal;
 }
 
 p {
 }
 
 a {
-	font-weight: bolder;
+	//font-weight: bolder;
 }
 
 em {

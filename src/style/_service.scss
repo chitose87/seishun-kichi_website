@@ -1,5 +1,30 @@
 .service {
-	background-color: $color_blue;
+	position: relative;
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background: linear-gradient(to bottom, #5CCAED 0%, #48D6BC 100%);
+	}
+	&:before {
+		transform: skewY(1deg);
+		transform-origin: top left;
+		opacity: 0.4;
+	}
+	&:after {
+		transform: skewY(-4deg);
+		opacity: 0.6;
+	}
+	.title.notBg {
+		color: $color_white;
+		.text {
+			border-color: $color_white;
+		}
+	}
 	@import "about-sp";
-
 }

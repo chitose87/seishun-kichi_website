@@ -1,6 +1,7 @@
 footer {
-	background-color: $color_blue;
+	background: linear-gradient(to bottom, #5CCAED 0%, $color_blue 100%);
 	padding: 1rem 1rem;
+	font-size: small;
 
 	.inner {
 		color: white;

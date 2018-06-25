@@ -13,7 +13,7 @@
 		flex: 1;
 		max-width: 500px;
 		margin-right: 0.75rem;
-
+		background-color: $color_white;
 		table {
 			width: 100%;
 			border-collapse: collapse;
@@ -21,26 +21,47 @@
 			tr {
 
 			}
+			th, td {
+				padding: 0.25rem;
+				border: 1px solid rgba($color_text_black, 0.5);
+			}
 			th {
 				text-align: left;
 				font-weight: normal;
-				border: 1px solid $color_gray1;
 			}
 			td {
-				border: 1px solid $color_gray1;
 			}
 		}
+
 		.document {
+			margin-top: 2rem;
+			text-align: center;
 			h3 {
+				font-size: larger;
+				.text {
+					display: inline-block;
+					border-bottom: 0.1rem solid $color_text_black;
+					line-height: 1;
+					padding: 0.5rem;
+				}
 			}
 			dl {
+				display: inline-block;
+				line-height: 1.75;
 				dt {
-
+					margin-top: 1rem;
+					margin-bottom: -1.75em;
+					text-align: left;
 				}
 				dd {
 					display: block;
+					margin-left: 3rem;
+					&:before {
+						content: "・";
+					}
 					a {
-
+						display: inline-block;
+						border-bottom: 1px solid $color_text_black;
 					}
 				}
 			}
@@ -50,5 +71,6 @@
 		flex: 1;
 		max-width: 500px;
 		margin-left: 0.75rem;
+		background-color: $color_white;
 	}
 }

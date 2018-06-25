@@ -14,17 +14,25 @@ section {
 	margin: auto;
 }
 
+.btn {
+	display: inline-block;
+	background-color: $color_white;
+	color: $color_text_black;
+	border-radius: 1rem;
+	line-height: 1;
+	padding: 0.5rem;
+}
+
 .title {
 	text-align: center;
 	margin-bottom: 2rem;
 	.text {
-		font-size: 48px;
+		font-size: 38px;
 		display: inline-block;
-		font-weight: normal;
 		background-color: rgba($color_black, 0.3);
 		color: $color_white;
 		line-height: 1;
-		padding: 0.5em;
+		padding: 0.5rem;
 	}
 	.en {
 		font-size: 18px;
@@ -32,7 +40,7 @@ section {
 		background-color: rgba($color_black, 0.3);
 		color: $color_white;
 		line-height: 1;
-		padding: 0.5em;
+		padding: 0.5rem;
 		margin-top: 0.25rem;
 	}
 
@@ -42,7 +50,12 @@ section {
 		* {
 			background-color: inherit;
 			color: inherit;
-			padding: 0;
+		}
+		.text {
+			border-bottom: 0.125rem solid $color_text_black;
+		}
+		.en {
+			margin-top: 0rem;
 		}
 	}
 }
