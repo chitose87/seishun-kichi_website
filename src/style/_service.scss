@@ -1,5 +1,9 @@
 .service {
 	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 5rem;
 	&:before, &:after {
 		content: "";
 		display: block;

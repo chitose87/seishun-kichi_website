@@ -140,6 +140,7 @@ header {
 footer {
   background: linear-gradient(to bottom, #5CCAED 0%, #6ebbd4 100%);
   padding: 1rem 1rem;
+  margin-top: 3rem;
   font-size: small; }
   footer .inner {
     color: white; }
@@ -209,7 +210,11 @@ footer {
   padding: 2rem 0; }
 
 .service {
-  position: relative; }
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem; }
   .service:before, .service:after {
     content: "";
     display: block;
@@ -245,61 +250,61 @@ footer {
       text-align: center;
       padding: 2rem 0; }
 
-.info .inner {
-  display: flex;
-  justify-content: space-around; }
-  @media screen and (min-width: 751px) {
-    .info .inner {
-      flex-direction: row; } }
-  @media screen and (max-width: 750px) {
-    .info .inner {
-      flex-direction: column; } }
-
-.info__detail {
-  flex: 1;
-  max-width: 500px;
-  margin-right: 0.75rem;
-  background-color: #fff; }
-  .info__detail table {
-    width: 100%;
-    border-collapse: collapse; }
-    .info__detail table th, .info__detail table td {
-      padding: 0.25rem;
-      border: 1px solid rgba(51, 51, 51, 0.5); }
-    .info__detail table th {
-      text-align: left;
-      font-weight: normal; }
-  .info__detail .document {
-    margin-top: 2rem;
-    text-align: center; }
-    .info__detail .document h3 {
-      font-size: larger; }
-      .info__detail .document h3 .text {
-        display: inline-block;
-        border-bottom: 0.1rem solid #333;
-        line-height: 1;
-        padding: 0.5rem; }
-    .info__detail .document dl {
-      display: inline-block;
-      line-height: 1.75; }
-      .info__detail .document dl dt {
-        margin-top: 1rem;
-        margin-bottom: -1.75em;
-        text-align: left; }
-      .info__detail .document dl dd {
-        display: block;
-        margin-left: 3rem; }
-        .info__detail .document dl dd:before {
-          content: "・"; }
-        .info__detail .document dl dd a {
+.info {
+  padding-bottom: 0; }
+  .info .inner {
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (min-width: 751px) {
+      .info .inner {
+        flex-direction: row; } }
+    @media screen and (max-width: 750px) {
+      .info .inner {
+        flex-direction: column; } }
+  .info__detail {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 0.75rem;
+    background-color: #fff; }
+    .info__detail table {
+      width: 100%;
+      border-collapse: collapse; }
+      .info__detail table th, .info__detail table td {
+        padding: 0.25rem;
+        border: 1px solid rgba(51, 51, 51, 0.5); }
+      .info__detail table th {
+        text-align: left;
+        font-weight: normal; }
+    .info__detail .document {
+      margin-top: 2rem;
+      text-align: center; }
+      .info__detail .document h3 {
+        font-size: larger; }
+        .info__detail .document h3 .text {
           display: inline-block;
-          border-bottom: 1px solid #333; }
-
-.info__news {
-  flex: 1;
-  max-width: 500px;
-  margin-left: 0.75rem;
-  background-color: #fff; }
+          border-bottom: 0.1rem solid #333;
+          line-height: 1;
+          padding: 0.5rem; }
+      .info__detail .document dl {
+        display: inline-block;
+        line-height: 1.75; }
+        .info__detail .document dl dt {
+          margin-top: 1rem;
+          margin-bottom: -1.75em;
+          text-align: left; }
+        .info__detail .document dl dd {
+          display: block;
+          margin-left: 3rem; }
+          .info__detail .document dl dd:before {
+            content: "・"; }
+          .info__detail .document dl dd a {
+            display: inline-block;
+            border-bottom: 1px solid #333; }
+  .info__news {
+    flex: 1;
+    max-width: 500px;
+    margin-left: 0.75rem;
+    background-color: #fff; }
 
 .concept .inner {
   min-height: 80vh;
