@@ -1,6 +1,5 @@
 .concept {
 	.inner {
-		background-image: url(../img/concept_bg.jpg);
 		background-size: cover;
 		background-position: center center;
 		display: flex;
@@ -17,6 +16,12 @@
 		}
 		.body {
 
+		}
+	}
+
+	&[data-inview*="true"] {
+		.inner {
+			background-image: url(../img/concept_bg.jpg);
 		}
 	}
 }

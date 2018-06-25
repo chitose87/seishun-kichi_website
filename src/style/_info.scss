@@ -67,6 +67,12 @@
 					a {
 						display: inline-block;
 						border-bottom: 1px solid $color_text_black;
+						@include mq-pc {
+							&:hover {
+								border-bottom: 1px dotted $color_blue;
+								color: $color_blue;
+							}
+						}
 					}
 				}
 			}
@@ -84,4 +90,10 @@
 			margin-top: 3rem;
 		}
 	}
+
+	//&[data-inview="true"] {
+	//	.info__news {
+	//		display: block;
+	//	}
+	//}
 }

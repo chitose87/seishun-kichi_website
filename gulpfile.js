@@ -38,13 +38,13 @@ gulp.task('style', function () {
         .src([
             dir.dev + '/**/*.scss'
         ])
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
         // .pipe(sourcemaps.write({includeContent: false}))
         // .pipe(sourcemaps.init({loadMaps: true}))
         // .pipe(autoprefixer())
-        .pipe(sourcemaps.write('.'))
+        // .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dir.dev));
 });
 

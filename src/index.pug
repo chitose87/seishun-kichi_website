@@ -19,7 +19,7 @@ html(lang='ja')
                 a.logo(href='#')
                     img(src='./img/logo.png')
         main
-            section.main-visual
+            section.main-visual(data-inview="false")
                 .under
                 .upper
                 .inner
@@ -27,10 +27,11 @@ html(lang='ja')
                         span 青春<いま>しか超えられない壁がある。
                         br
                         span 青春<いま>しかないエネルギーや煌めきがある。
-            section.vision
+
+            section.vision(data-inview="false")
                 .inner
                     .body
-                        h2.title
+                        h2.title-bg
                             span.text 想定外の未来をつくる
                             br
                             span.en Vision
@@ -57,14 +58,15 @@ html(lang='ja')
                             | この次は抜かさずに飛んで見せますと答えた。
 
             section.service
-                h2.title.notBg
+                h2.title
                     span.text 事業
                     br
                     span.en Delivering
-                .about-sp
+
+                .about-sp(data-inview="false")
                     .inner
                         .body
-                            h3.title
+                            h3.title-bg
                                 span.text 学校プロジェクト
                                 br
                                 span.en School project
@@ -91,10 +93,10 @@ html(lang='ja')
                                 br
                                 | この次は抜かさずに飛んで見せますと答えた。
 
-                .about-magazine
+                .about-magazine(data-inview="false")
                     .inner
                         .body
-                            h3.title
+                            h3.title-bg
                                 span.text ウェブマガジン
                                 br
                                 span.en Web magazine
@@ -121,10 +123,10 @@ html(lang='ja')
                                 br
                                 | この次は抜かさずに飛んで見せますと答えた。
 
-            section.info
+            section.info(data-inview="false")
                 .inner
                     .info__detail
-                        h2.title.notBg
+                        h2.title
                             span.text 団体詳細
                             br
                             span.en Detail
@@ -158,7 +160,7 @@ html(lang='ja')
                                         a(href='', target='_blank') 団体パンフレット
 
                     .info__news
-                        h2.title.notBg
+                        h2.title
                             span.text お知らせ
                             br
                             span.en News
@@ -167,10 +169,10 @@ html(lang='ja')
                                 blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/seishunkichi/')
                                     a(href='https://www.facebook.com/seishunkichi/') NPO法人 青春基地
 
-            section.concept
+            section.concept(data-inview="false")
                 .inner
                     .body
-                        h2.title
+                        h2.title-bg
                             span.text 関わる、支える
                             br
                             span.en Message
@@ -225,12 +227,3 @@ html(lang='ja')
                     p Copy Right © 青春基地, All Rights Reserved.
         script(src='./script/index.js')
         #fb-root
-        script.
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.0&appId=1802386693132716&autoLogAppEvents=1';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));

@@ -92,45 +92,65 @@ section {
   border-radius: 1rem;
   line-height: 1;
   padding: 0.5rem; }
+  @media screen and (min-width: 751px) {
+    .btn:hover {
+      background-color: #6ebbd4;
+      color: #fff; } }
 
-.title {
+.note {
+  font-size: small;
+  margin-top: 0.5em; }
+
+[class*="title"] {
   text-align: center;
-  margin-bottom: 2rem; }
-  .title .text {
+  padding: 0.5rem;
+  margin-bottom: 1rem; }
+  [class*="title"] .text {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    line-height: 1;
+    padding: 0.5rem;
+    border-bottom: 0.125rem solid #333; }
+    @media screen and (min-width: 751px) {
+      [class*="title"] .text {
+        font-size: 38px; } }
+    @media screen and (max-width: 750px) {
+      [class*="title"] .text {
+        font-size: 25px; } }
+  [class*="title"] .en {
+    display: inline-block;
     line-height: 1;
     padding: 0.5rem; }
     @media screen and (min-width: 751px) {
-      .title .text {
-        font-size: 38px; } }
-    @media screen and (max-width: 750px) {
-      .title .text {
-        font-size: 25px; } }
-  .title .en {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    line-height: 1;
-    padding: 0.5rem;
-    margin-top: 0.25rem; }
-    @media screen and (min-width: 751px) {
-      .title .en {
+      [class*="title"] .en {
         font-size: 18px; } }
     @media screen and (max-width: 750px) {
-      .title .en {
+      [class*="title"] .en {
         font-size: 15px; } }
-  .title.notBg {
-    padding: 0.5rem;
-    margin-bottom: 1rem; }
-    .title.notBg * {
-      background-color: inherit;
-      color: inherit; }
-    .title.notBg .text {
-      border-bottom: 0.125rem solid #333; }
-    .title.notBg .en {
-      margin-top: 0rem; }
+
+.title-bg {
+  margin-bottom: 2rem;
+  padding: 0; }
+  .title-bg .text {
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; }
+  .title-bg .en {
+    margin-top: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff; }
+
+[data-inview="true"] .title-bg .text, [data-inview="true"] .title-bg .en {
+  transform: scaleX(0);
+  color: #000;
+  background-color: #000; }
+
+[data-inview="true-fin"] .title-bg .text {
+  transform-origin: top left;
+  transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s, color 0s linear 0.6s, background-color 0s linear 0.6s; }
+
+[data-inview="true-fin"] .title-bg .en {
+  transform-origin: top left;
+  transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s, color 0s linear 0.8s, background-color 0s linear 0.8s; }
 
 p + p {
   margin-top: 1rem; }
@@ -213,7 +233,6 @@ footer {
           font-size: 14px; } }
 
 .vision .inner {
-  background-image: url(../img/vision_bg.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -225,6 +244,9 @@ footer {
   @media screen and (min-width: 751px) {
     .vision .inner {
       min-height: 110vh; } }
+
+.vision[data-inview*="true"] .inner {
+  background-image: url(../img/vision_bg.jpg); }
 
 .service {
   position: relative;
@@ -256,7 +278,6 @@ footer {
   .service .about-sp {
     position: relative; }
     .service .about-sp .inner {
-      background-image: url(../img/about-sp_bg.jpg);
       background-size: cover;
       background-position: center center;
       display: flex;
@@ -268,11 +289,12 @@ footer {
       @media screen and (min-width: 751px) {
         .service .about-sp .inner {
           min-height: 80vh; } }
+    .service .about-sp[data-inview*="true"] .inner {
+      background-image: url(../img/about-sp_bg.jpg); }
   .service .about-magazine {
     position: relative;
     margin-top: 2rem; }
     .service .about-magazine .inner {
-      background-image: url(../img/about-sp_bg.jpg);
       background-size: cover;
       background-position: center center;
       display: flex;
@@ -284,6 +306,8 @@ footer {
       @media screen and (min-width: 751px) {
         .service .about-magazine .inner {
           min-height: 80vh; } }
+    .service .about-magazine[data-inview*="true"] .inner {
+      background-image: url(../img/about-sp_bg.jpg); }
 
 .info {
   padding-bottom: 0; }
@@ -337,6 +361,10 @@ footer {
           .info__detail .document dl dd a {
             display: inline-block;
             border-bottom: 1px solid #333; }
+            @media screen and (min-width: 751px) {
+              .info__detail .document dl dd a:hover {
+                border-bottom: 1px dotted #6ebbd4;
+                color: #6ebbd4; } }
   .info__news {
     flex: 1;
     max-width: 500px;
@@ -350,7 +378,6 @@ footer {
         margin-top: 3rem; } }
 
 .concept .inner {
-  background-image: url(../img/concept_bg.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -366,4 +393,5 @@ footer {
     .concept .inner {
       margin-top: 2rem; } }
 
-/*# sourceMappingURL=index.css.map */
+.concept[data-inview*="true"] .inner {
+  background-image: url(../img/concept_bg.jpg); }
