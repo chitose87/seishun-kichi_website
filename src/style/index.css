@@ -307,7 +307,7 @@ footer {
         .service .about-magazine .inner {
           min-height: 80vh; } }
     .service .about-magazine[data-inview*="true"] .inner {
-      background-image: url(../img/about-sp_bg.jpg); }
+      background-image: url(../img/about-magazine_bg.jpg); }
 
 .info {
   padding-bottom: 0; }
