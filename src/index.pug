@@ -28,38 +28,49 @@ html(lang='ja')
                         br
                         span 10代という一瞬に溢れる可能性から。
 
-            section.vision(data-inview="false")
+            section.vision.kakuhan-block(data-inview="false")
                 .inner
                     .body
-                        h2.title-bg
+                        h2.title
                             span.text 想定外の未来をつくる
                             br
                             span.en Vision
                         p どんな言葉をかけられて育つか。
                             br
                             | これまで、小さな一言で未来が広がっていく高校生たちの姿を見てきました。
-                        p 「学校では本音は言えない」
+                        p
+                            span.flip 「学校で本音は言えない」
+                            | 、
+                            //br
+                            span.flip 「やりたいこととか、とくにない」
+                            
+                        p
+                            | 今の子どもたちから聞こえてくる声からは、
                             br
-                            | 「やりたいこととか、とくにない」
-                            br
-                            | しかし、今の子どもたちから聞こえてくる声からは、
-                            br
-                            | 彼らの自己肯定感や意欲を下げてしまっている学校の空気や学び方も見えてきます。
+                            | 彼らの
+                            span.flip 自己肯定感
+                            | や意欲を下げてしまっている学校の空気や学び方も見えてきます。
+
                         p 青春基地では、一人ひとりの好奇心や創造力を起点に、
                             br
                             | 校舎を飛び出し、出会いと経験のなかで学んでいく
                             br
-                            |  「Project Based Learning（PjBL）」 という新しい学びを届けています。
-                        p そして私たちは、これらの課題が「個人」ではなく「社会」にあると捉えています。
+                            span.flip 「Project Based Learning（PjBL）」
+                            | という新しい学びを届けています。
+
+                        p そして私たちは、これらの課題が「個人」ではなく
+                            span.flip 「社会」
+                            | にあると捉えています。
                             br
                             | 学びを届けるだけでなく、構造や環境を捉え直し、
                             br
                             | 豊かな関係性が紡がれた学校づくりに取り組んでいます。
+
                         p 「そんなこと出来るとは思ってなかった！」
                             br
-                            | 生まれ育った環境をこえて、
+                            span.flip 生まれ育った環境をこえて、一人ひとりが想定外の未来をつくる。
                             br
-                            | 一人ひとりが想定外の未来をつくる。そんな社会を目指して。
+                            | そんな社会を目指して。
 
             section.service
                 h2.title
@@ -67,10 +78,10 @@ html(lang='ja')
                     br
                     span.en Project
 
-                .about-sp(data-inview="false")
+                .about-sp.kakuhan-block(data-inview="false")
                     .inner
                         .body
-                            h3.title-bg
+                            h3.title
                                 span.text 学校プロジェクト
                                 br
                                 span.en School Project
@@ -87,25 +98,26 @@ html(lang='ja')
                                 br
                                 | 動いてみることで初めて見える景色や、驚きから、探求が始まっていきます。
 
-                            p ＜実施校（2017年度よりスタート）＞
-                                ul
-                                    li
-                                        p 山梨県立富士北稜高校（課題研究・通年毎週2コマ）
-                                    li
-                                        p 福島県ふたば未来学園（未来探求*学校設置科目・通年毎週2コマ）
-                                    li
-                                        p 東京都立第一商業高校（ビジネス基礎・通年毎1コマ）
 
-                            p.note ふたば未来学園での活動は、2017年度の
-                                a(href="http://www.public.or.jp/PRF/fund/fund_08/fukushima2017.html",target="_blank") 「ふくしま未来基金」
-                                | および
-                                a(href="http://tsunagu-inochi.org/",target="_blank") 「つなぐいのち基金」
-                                | の助成を受けて実施しました。
+                            h4 実施校
+                            ul
+                                li
+                                    p 山梨県立富士北稜高校（課題研究・通年毎週2コマ）
+                                li
+                                    p 福島県ふたば未来学園（未来探求*学校設置科目・通年毎週2コマ）
+                                    p.note
+                                        | 2017年度の
+                                        a(href="http://www.public.or.jp/PRF/fund/fund_08/fukushima2017.html",target="_blank") 「ふくしま未来基金」
+                                        | および
+                                        a(href="http://tsunagu-inochi.org/",target="_blank") 「つなぐいのち基金」
+                                        | の助成を受けて実施しました。
+                                li
+                                    p 東京都立第一商業高校（ビジネス基礎・通年毎1コマ）
 
-                .about-magazine(data-inview="false")
+                .about-magazine.kakuhan-block(data-inview="false")
                     .inner
                         .body
-                            h3.title-bg
+                            h3.title
                                 span.text ウェブマガジン
                                 br
                                 span.en Web Magazine
@@ -184,10 +196,10 @@ html(lang='ja')
                                 blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/seishunkichi/')
                                     a(href='https://www.facebook.com/seishunkichi/') NPO法人 青春基地
 
-            section.concept(data-inview="false")
+            section.concept.kakuhan-block(data-inview="false")
                 .inner
                     .body
-                        h2.title-bg
+                        h2.title
                             span.text かかわる、支える
                             br
                             span.en Join Us
@@ -195,13 +207,16 @@ html(lang='ja')
                         p 学校現場に入り、カリキュラムづくりを担う学生インターン、
                             br
                             | 広報や資金調達を担う社会人プロボノのメンバーを募集しています。
-                        p 私たちは、「探求」するチームです。
+                        p 私たちは、
+                            span.flip 「探求」
+                            | するチームです。
                             br
                             | 既存の社会規範や固定概念を問い直し、
                             br
                             | 人と向き合うことで、新しい価値観を考えつづけることを大切にしています。
                             br
                             | ご一緒に、仮説検証と議論を楽しめたら嬉しいです。
+
                         p また、みなさんの関わりや支えを通じて、
                             br
                             | みんなで子どもを育てる社会を耕していきたいと思います。
@@ -210,7 +225,9 @@ html(lang='ja')
                             br
                             | 子どもの存在自体が見えにくくなっています。
                             br
-                            | だからこそ、みんなで未来を担う子どもたちに「希望」というバトンを渡しませんか。
+                            | だからこそ、みんなで未来を担う子どもたちに
+                            span.flip 「希望」
+                            | というバトンを渡しませんか。
 
                         p
                             a.btn(href="https://docs.google.com/forms/d/e/1FAIpQLScCSFjU97dDyVSSTfRPUUASidDCnD65OiDrnBEMJNupAcbt0g/viewform") メールマガジンに登録

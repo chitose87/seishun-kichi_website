@@ -1,18 +1,29 @@
 .about-sp {
-	position: relative;
+	//position: relative;
 	.inner {
-		background-size: cover;
-		background-position: center center;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: white;
-		text-align: center;
-		padding: 4rem 1rem;
+		//background-size: cover;
+		//background-position: center center;
+		//display: flex;
+		//justify-content: center;
+		//align-items: center;
+		//color: white;
+		//text-align: center;
+		//padding: 4rem 1rem;
 		@include mq-pc {
 			min-height: 80vh;
 		}
-		.body {
+		//.body {
+		//}
+	}
+	ul {
+		display: inline-block;
+		text-align: left;
+		list-style: disc;
+		li {
+			//margin-top: 0.5rem;
+			.note {
+				margin-top: 0;
+			}
 		}
 	}
 	&[data-inview*="true"] {
