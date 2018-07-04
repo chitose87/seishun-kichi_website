@@ -8,9 +8,31 @@ section {
 	padding: 2.5rem 1rem;
 }
 
+.isSp {
+	@include mq-pc {
+		display: none;
+	}
+}
+
+.isPc {
+	@include mq-sp {
+		display: none;
+	}
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+//
+
 .inner {
 	width: 100%;
-	max-width: 1160px;
+	max-width: 1400px;
 	margin: auto;
 }
 
@@ -50,7 +72,7 @@ section {
 		padding: 0.5rem;
 		border-bottom: 0.125rem solid $color_text_black;
 		@include mq-pc {
-			font-size: 38px;
+			font-size: 44px;
 		}
 		@include mq-sp {
 			font-size: 25px;
@@ -61,7 +83,7 @@ section {
 		line-height: 1;
 		padding: 0.5rem;
 		@include mq-pc {
-			font-size: 18px;
+			font-size: larger;
 		}
 		@include mq-sp {
 			font-size: 15px;
@@ -85,13 +107,24 @@ section {
 		&:before {
 			content: "";
 			position: absolute;
-			width: 100%;
 			height: 100%;
-			top: 10%;
-			background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+			@include mq-pc {
+				width: 100%;
+				top: 10%;
+				background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+			}
+			@include mq-sp {
+				width: 120%;
+				top: 0%;
+				left: -10%;
+				background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+			}
 		}
 		.body {
 			position: relative;
+			@include mq-pc {
+				font-size: larger;
+			}
 			p {
 				text-shadow: 0px 0px 3px #000;
 			}
@@ -165,8 +198,9 @@ section {
 	background-color: $color_white;
 	color: $color_text_black;
 	text-shadow: none;
-	margin: 0 0.5em;
-	font-size: larger;
+	margin: 0 0.25em;
+	padding: 0 0.25em;
+	//font-size: larger;
 	line-height: 1;
 }
 
