@@ -3,6 +3,7 @@ header {
 	padding: 1rem 1rem;
 	.inner {
 		.logo {
+			border-bottom: 0;
 			img {
 				width: auto;
 				@include mq-pc {

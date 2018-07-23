@@ -56,6 +56,14 @@ a {
 	text-decoration: none;
 	color: inherit;
 	word-wrap: break-word;
+	display: inline-block;
+	border-bottom: 1px solid $color_text_black;
+	@include mq-pc {
+		&:hover {
+			border-bottom: 1px dotted $color_blue;
+			color: $color_blue;
+		}
+	}
 }
 
 ul, ol {

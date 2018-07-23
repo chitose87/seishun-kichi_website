@@ -2,14 +2,15 @@ var mv = document.querySelector(".main-visual");
 var mv_upper = mv.querySelector(".upper");
 var mv_under = mv.querySelector(".under");
 
-var n, i;
-var l = i = 5;
+var n;
+var l = 4;
+var i = Math.floor(Math.random() * l);
 var toggle = true;
-
 
 setInterval(change, 5000);
 window.addEventListener('scroll', onScroll);
 window.addEventListener('scroll', onScrollFb);
+
 
 change();
 onScroll();
@@ -35,24 +36,23 @@ function onScroll() {
     var targets = document.querySelectorAll("[data-inview='false'],[data-inview='true']");
     var WH = window.outerHeight;
     var nnn = WH / 2.5;
-    // console.log(nnn);
-    targets.forEach(function (target) {
-        var h = target.offsetHeight;
-        var y = target.getBoundingClientRect().top;
-        // console.log(target,y);
+    for (var i in targets) {
+        var target = targets[i];
+        try {
+            var h = target.offsetHeight;
+            var y = target.getBoundingClientRect().top;
 
-        if (WH > y && 0 < y + h) {
-            //top が window bottom の上にある
-            //bottom が window top の下にある
-            if (WH - nnn > y) {
-                target.setAttribute("data-inview", "true-fin");
+            if (WH > y && 0 < y + h) {
+                if (WH - nnn > y) {
+                    target.setAttribute("data-inview", "true-fin");
+                } else {
+                    target.setAttribute("data-inview", "true");
+                }
             } else {
-                target.setAttribute("data-inview", "true");
             }
-        } else {
-            // target.setAttribute("data-inview", "false");
+        } catch (e) {
         }
-    });
+    }
 }
 
 function onScrollFb() {

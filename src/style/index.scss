@@ -44,6 +44,7 @@ section {
 	line-height: 1;
 	padding: 0.5rem 1rem;
 	text-shadow: none;
+	border-bottom: none !important;
 
 	@include mq-pc {
 		&:hover {
@@ -75,7 +76,7 @@ section {
 			font-size: 44px;
 		}
 		@include mq-sp {
-			font-size: 25px;
+			font-size: 24px;
 		}
 	}
 	.en {
@@ -115,7 +116,7 @@ section {
 			}
 			@include mq-sp {
 				width: 120%;
-				top: 0%;
+				top: 0;
 				left: -10%;
 				background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
 			}

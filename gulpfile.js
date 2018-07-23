@@ -60,7 +60,7 @@ gulp.task('server', function () {
 gulp.task('server-dist', function () {
     browserSync({
         server: {
-            baseDir: './dist/',
+            baseDir: './src/',
             index: 'index.html',
             directory: true
         }
@@ -83,7 +83,7 @@ gulp.task('clean', function () {
 gulp.task('copy', function () {
     return gulp
         .src([
-                dir.dev + '/**/*.+(html|jpg|png|svg|js|css|eot|ttf|woff)'
+                dir.dev + '/**/*.+(html|jpg|png|svg|js|css|eot|ttf|woff|pdf)'
                 , '!**/_**/**/*.*']
             , {base: dir.dev}
         )
