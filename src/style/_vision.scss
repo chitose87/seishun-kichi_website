@@ -1,23 +1,7 @@
 .vision {
 	.inner {
-		//background-size: cover;
-		//background-position: center center;
-		//display: flex;
-		//justify-content: center;
-		//align-items: center;
-		//color: white;
-		//text-align: center;
-		//padding: 4rem 1rem;
-		//position: relative;
+		background-color: $color_white;
 
-		//&:before {
-		//	content: "";
-		//	position: absolute;
-		//	width: 100%;
-		//	height: 100%;
-		//	top: 10%;
-		//	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%);
-		//}
 		@include mq-pc {
 			min-height: 110vh;
 		}
@@ -30,7 +14,14 @@
 	}
 	&[data-inview*="true"] {
 		.inner {
-			background-image: url(../img/vision_bg.jpg);
+			@include mq-pc {
+				background-image: url(../img/vision_bg.jpg);
+
+			}
+			@include mq-sp {
+				background-image: url(../img/vision_bg_sp.jpg);
+
+			}
 		}
 	}
 }

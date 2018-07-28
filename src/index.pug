@@ -12,16 +12,15 @@ html(lang='ja')
         meta(name='description', content=description)
         meta(name='keywords', content=keyword)
         meta(name='apple-mobile-web-app-capable', content='yes')
-        link(rel='apple-touch-icon', href='favicon.png')
+        link(rel='apple-touch-icon', href='http://seishun.co/favicon.ico')
         link(rel='stylesheet', href='style/index.css')
         link(href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet")
         meta(property='og:title', content=title)
         meta(property='og:type', content='website')
         meta(property='og:url', content='http://seishun.co/')
-        meta(property='og:image', content="img/ogp.jpg"))
+        meta(property='og:image', content="http://seishun.co/ogp.jpg")
         meta(property='og:site_name', content = title)
         meta(property='og:description', content = description)
-
 
     body
         header
@@ -304,3 +303,13 @@ html(lang='ja')
                     p Copy Right © 青春基地, All Rights Reserved.
         script(src='./script/index.js')
         #fb-root
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-122925831-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122925831-1');
+

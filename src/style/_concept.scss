@@ -1,13 +1,7 @@
 .concept {
 	.inner {
-		//background-size: cover;
-		//background-position: center center;
-		//display: flex;
-		//justify-content: center;
-		//align-items: center;
-		//color: $color_white;
-		//text-align: center;
-		//padding: 4rem 1rem;
+		background-color: $color_white;
+
 		@include mq-pc {
 			min-height: 80vh;
 		}
@@ -21,7 +15,15 @@
 
 	&[data-inview*="true"] {
 		.inner {
-			background-image: url(../img/concept_bg.jpg);
+			@include mq-pc {
+				background-image: url(../img/concept_bg.jpg);
+
+			}
+			@include mq-sp {
+
+				background-image: url(../img/concept_bg_sp.jpg);
+			}
+
 		}
 	}
 }
